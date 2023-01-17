@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #144272;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+}
+.navlinks ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.navlinks ul li{
+    list-style: none;
+    margin: 10px;
+    font-family: cinzel;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 15px;
+}
+.navlinks ul a{
+    text-decoration: none;
+    color: white;
+}
+.navlinks ul li:hover{
+    transition: 0.3s ease-in;
+    border: none;
+    background-color: white;
+    color: #144272;
+    font-weight: 600;
+}
+.login-signup{
+  position: relative;
+  top: -8;
+}
+.login-signup a button{
+    font-family: poppins;
+    background: none;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    margin-right: 50px;
+    padding: 5px;
+}
+.login-signup a button:hover{
+    transition: 0.3s ease-in;
+    background-color: white;
+    color: #144272;
+    font-weight: 600;
+}
+.bg-video{
+    position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            width:100%;
+}
+.video-container{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+
+}
+.video-container h1{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: raleway;
+    font-size: 100px;
+    padding: 80px;
+    font-weight: 900;
+    letter-spacing: 2px;
+   text-shadow: 8px 8px #144272;
+   cursor: pointer;
+}
+.video-container h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+.video-container h2{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 5px 5px 5px black;
+   cursor: poin
+   ter;
+}
+.video-container a button{
+    text-decoration: none;
+    background: none;
+    width: 250px;
+    height: 40px;
+    border: 2px solid white;
+    font-family: cinzel;
+    color: white;
+    word-spacing: 3px;
+    text-shadow: 5px 5px 5px #000;
+}
+.video-container a button:hover{
+    transition: 0.3s ease-in;
+    color: white;
+    word-spacing: 5px;
+}
+.viruses-intro{
+    display: flex;
+    justify-content: space-evenly;
+}
+.intro-para{
+    text-align: center;
+    justify-content: center;
+}
+.intro-para h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 45px;
+    font-family: poppins;
+}
+.intro-para h5{
+  margin: 10px;
+    font-family: poppins;
+}
+.intro-pic video{
+  width: 50%;
+  height: 600px;
+  margin: 10px;
+}
+.intro-para p{
+    font-family: poppins;
+    line-height: -10px;
+} 
+.intro-para button{
+    color: #000;
+    background: none;
+    border: 2px solid #000;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+}
