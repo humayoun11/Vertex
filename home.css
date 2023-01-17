@@ -5,157 +5,257 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+main{
+    background-image: url(https://media.istockphoto.com/id/1216026008/photo/virus-bacteria-cells-microbe-background.jpg?s=612x612&w=0&k=20&c=x6D9fUaxGjqjFEC21LiZOiRoTuY7MFULqGWDbVZ4-lE=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 .navbar{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    background-color: #144272;
+   /* background: #063247;
+    height: 90px;
+    opacity: 0.8;*/
+   width: 100%;
+   position: fixed;
 }
 .logo img{
     height: 100px;
-    width: 100px;
-    margin-left: 50px;
+    width: 200px;
+    
 }
 .navlinks ul{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: end;
 }
 .navlinks ul li{
-    list-style: none;
     margin: 10px;
-    font-family: cinzel;
-    border: 1px solid white;
-    border-radius: 4px;
-    padding: 5px;
-    font-size: 15px;
+    list-style: none;
+    padding: 10px;
+    font-family: poppins;
+    font-size: 14px;
+    cursor: pointer;
 }
 .navlinks ul a{
     text-decoration: none;
     color: white;
 }
 .navlinks ul li:hover{
+    content: '';
     transition: 0.3s ease-in;
-    border: none;
-    background-color: white;
-    color: #144272;
-    font-weight: 600;
+    border-bottom: 1px solid #23dbdb;
+    color: #23dbdb;
 }
-.login-signup{
-  position: relative;
-  top: -8;
-}
-.login-signup a button{
-    font-family: poppins;
-    background: none;
-    font-size: 15px;
-    border-radius: 15px;
-    border: 1px solid white;
-    text-decoration: none;
+.fa-brands{
     color: white;
-    width: 150px;
-    height: 35px;
     margin: 10px;
-    margin-right: 50px;
-    padding: 5px;
+    margin-top: 23px;
+    font-size: 17px;
+    cursor: pointer;
+    text-shadow: 7px 7px 7px #000;
 }
-.login-signup a button:hover{
+.fa-brands:hover{
+    color: #23dbdb;
     transition: 0.3s ease-in;
-    background-color: white;
-    color: #144272;
-    font-weight: 600;
+    border-bottom: 1px solid #23dbdb;
 }
-.bg-video{
-    position: absolute;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            width:100%;
-}
-.video-container{
-    height: 100vh;
-    width: 100%;
+.banner-text{
+    justify-content: center;
     text-align: center;
+    color: white;
+}
+.banner-text h1{
+    font-family: cinzel;
+    font-size: 80px;
+  text-shadow: 7px 7px 7px black;
+}
+.animate__animated.animate__fadeIn{
+    animation-duration: 3s;
+    transition: 0.3s;
+}
+.banner-text h4{
+    font-family: cinzel;
+    text-shadow: 7px 7px 7px black;
 
 }
-.video-container h1{
-    text-align: center;
-    justify-content: center;
-    color: white;
-    font-family: raleway;
-    font-size: 100px;
-    padding: 80px;
-    font-weight: 900;
-    letter-spacing: 2px;
-   text-shadow: 8px 8px #144272;
-   cursor: pointer;
-}
-.video-container h1:hover{
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-}
-.video-container h2{
-    text-align: center;
-    justify-content: center;
-    color: white;
-    font-family: poppins;
-    font-size: 40px;
-    font-weight: 800;
-    text-shadow: 5px 5px 5px black;
-   cursor: poin
-   ter;
-}
-.video-container a button{
+
+
+
+
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three a{
     text-decoration: none;
-    background: none;
-    width: 250px;
-    height: 40px;
-    border: 2px solid white;
+    color: white;
+}
+.btn-three span{
     font-family: cinzel;
-    color: white;
-    word-spacing: 3px;
-    text-shadow: 5px 5px 5px #000;
 }
-.video-container a button:hover{
-    transition: 0.3s ease-in;
-    color: white;
-    word-spacing: 5px;
-}
-.viruses-intro{
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    width: 200px;
+   
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(54, 51, 51, 0.144);
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 3px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+
+
+  .virus-intro{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.intro-para{
-    text-align: center;
-    justify-content: center;
-}
-.intro-para h1{
-    text-align: center;
-    justify-content: center;
-    font-size: 45px;
-    font-family: poppins;
-}
-.intro-para h5{
-  margin: 10px;
-    font-family: poppins;
-}
-.intro-pic video{
-  width: 50%;
-  height: 600px;
-  margin: 10px;
-}
-.intro-para p{
-    font-family: poppins;
-    line-height: -10px;
-} 
-.intro-para button{
+  }
+  .virus-intro h1{
+    font-family: cinzel;
+    font-size: 40px;
     color: #000;
-    background: none;
-    border: 2px solid #000;
-    width: 150px;
-    height: 35px;
+  }
+  .intro-para{
+    margin: 20px;
+    font-family: poppins;
+
+  }
+  .corona{
+    background-image: url(https://images.pexels.com/photos/4197565/pexels-photo-4197565.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh; 
+}
+.corona h1{
+    font-family: cinzel;
+    font-size: 60px;
     text-align: center;
     justify-content: center;
+    color: black;
+    padding-top: 100px;
+    text-shadow: 7px 7px 7px white;
 }
+.corona h4{
+    font-family: cinzel;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    color: black;
+    text-shadow: 7px 7px 7px white;
+}
+.corona p{
+    font-family: poppins;
+    font-size: 17px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    text-shadow: 7px 7px 7px white;
+    margin: 20px;
+}
+
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.box-1{
+    justify-content: center;
+    text-align: center;
+}
+.btn-one a{
+    text-decoration: none;
+    color: black;
+}
+.btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+    text-shadow: 7px 7px 7px white;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(5, 4, 4, 0.5);
+    border-bottom-color: rgba(5, 4, 4, 0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+  
+  
+  /*
