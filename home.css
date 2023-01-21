@@ -1,93 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
+
+/*-----------------------------navbar--------------------------*/
 main{
-    background-image: url(https://media.istockphoto.com/id/1216026008/photo/virus-bacteria-cells-microbe-background.jpg?s=612x612&w=0&k=20&c=x6D9fUaxGjqjFEC21LiZOiRoTuY7MFULqGWDbVZ4-lE=);
+    background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)
+
+    ),
+     url(viruses\ banner.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    background-attachment: fixed;
 }
+
 .navbar{
+    height: 80px !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   /* background: #063247;
-    height: 90px;
-    opacity: 0.8;*/
-   width: 100%;
-   position: fixed;
-}
-.logo img{
-    height: 100px;
-    width: 200px;
+    width: 100%;
+    position: fixed;
+    background: rgb(20, 20, 90);
+    opacity: 0.8;
     
 }
+.vertex-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: -5px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+.vertex-logo h4{
+  padding-top: 50px;
+  font-family: sans-serif;
+  font-size: 30px;
+  margin-top: -35px !important;
+  margin-left: 5px;
+  font-family: 'Fredoka One', cursive;
+}
+/*.navlinks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}*/
 .navlinks ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
-}
-.navlinks ul li{
-    margin: 10px;
-    list-style: none;
-    padding: 10px;
-    font-family: poppins;
-    font-size: 14px;
-    cursor: pointer;
-}
-.navlinks ul a{
-    text-decoration: none;
-    color: white;
-}
-.navlinks ul li:hover{
-    content: '';
-    transition: 0.3s ease-in;
-    border-bottom: 1px solid #23dbdb;
-    color: #23dbdb;
-}
-.fa-brands{
-    color: white;
-    margin: 10px;
-    margin-top: 23px;
-    font-size: 17px;
-    cursor: pointer;
-    text-shadow: 7px 7px 7px #000;
-}
-.fa-brands:hover{
-    color: #23dbdb;
-    transition: 0.3s ease-in;
-    border-bottom: 1px solid #23dbdb;
-}
-.banner-text{
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-.banner-text h1{
-    font-family: cinzel;
-    font-size: 80px;
-  text-shadow: 7px 7px 7px black;
-}
-.animate__animated.animate__fadeIn{
-    animation-duration: 3s;
-    transition: 0.3s;
-}
-.banner-text h4{
-    font-family: cinzel;
-    text-shadow: 7px 7px 7px black;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    }
+    .navlinks ul li{
+        list-style: none;
+        margin: 10px;
+        font-family: poppins;
+    }
+    .navlinks ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    .navlinks ul ul{
+        display: none;
+    }
+    .login-signup{
+        padding-top: 2px;
+        margin-right: 20px;
+    }
 
+    .login-signup a button{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 150px;
+        height: 35px;
+        background: none;
+        text-decoration: none;
+        color: white;
+        font-family: poppins;
+        font-size: 15px;
+    }
+    .login-signup a button:hover{
+        transition: 0.3s ease-in;
+       background:  rgb(6, 6, 29);
+       opacity: 0.8;
+    }
+    .fa-brands{
+        padding-top: 4px;
+        color: white;
+        margin: 5px;
+        font-size: 20px;
+    }
+    .fa-brands:hover{
+        transition: 0.3s ease-in;
+        color: grey;
+        cursor: pointer;
+    } 
+
+    /*------------------------------------banner text----------------------------*/
+    .banner-text{
+        justify-content: center;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        padding-top: 20px;
+    }
+    .banner-text h1{
+        font-size: 50px;
+    }
+    .banner-text img{
+        animation: mymove 80s infinite;
+    }
+    @keyframes mymove {
+        50% {transform: rotate(480deg);}
+      }
+.banner-text-flex{
+    display: flex;
+    justify-content: space-evenly;
 }
-
-
-
 
 
 /* 
@@ -97,17 +141,14 @@ main{
 */
 .btn-three a{
     text-decoration: none;
-    color: white;
-}
-.btn-three span{
-    font-family: cinzel;
+    color: #FFF;
+    font-family: poppins;
 }
 .btn-three {
     color: #FFF;
     transition: all 0.5s;
     position: relative;
-    width: 200px;
-   
+    width: 150px;
   }
   .btn-three::before {
     content: '';
@@ -117,7 +158,7 @@ main{
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(54, 51, 51, 0.144);
+    background-color: rgba(255,255,255,0.1);
     transition: all 0.3s;
   }
   .btn-three:hover::before {
@@ -134,128 +175,10 @@ main{
     z-index: 1;
     opacity: 0;
     transition: all 0.3s;
-    border: 3px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.5);
     transform: scale(1.2,1.2);
   }
   .btn-three:hover::after {
     opacity: 1;
     transform: scale(1,1);
   }
-
-
-  .virus-intro{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .virus-intro h1{
-    font-family: cinzel;
-    font-size: 40px;
-    color: #000;
-  }
-  .intro-para{
-    margin: 20px;
-    font-family: poppins;
-
-  }
-  .corona{
-    background-image: url(https://images.pexels.com/photos/4197565/pexels-photo-4197565.jpeg?auto=compress&cs=tinysrgb&w=600);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh; 
-}
-.corona h1{
-    font-family: cinzel;
-    font-size: 60px;
-    text-align: center;
-    justify-content: center;
-    color: black;
-    padding-top: 100px;
-    text-shadow: 7px 7px 7px white;
-}
-.corona h4{
-    font-family: cinzel;
-    text-align: center;
-    justify-content: center;
-    padding-top: 50px;
-    color: black;
-    text-shadow: 7px 7px 7px white;
-}
-.corona p{
-    font-family: poppins;
-    font-size: 17px;
-    text-align: center;
-    justify-content: center;
-    color: black;
-    text-shadow: 7px 7px 7px white;
-    margin: 20px;
-}
-
-
-/* 
-========================
-      BUTTON ONE
-========================
-*/
-.box-1{
-    justify-content: center;
-    text-align: center;
-}
-.btn-one a{
-    text-decoration: none;
-    color: black;
-}
-.btn-one {
-    color: #FFF;
-    transition: all 0.3s;
-    position: relative;
-  }
-  .btn-one span {
-    transition: all 0.3s;
-    text-shadow: 7px 7px 7px white;
-  }
-  .btn-one::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border-top-width: 3px;
-    border-bottom-width: 3px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-color: rgba(5, 4, 4, 0.5);
-    border-bottom-color: rgba(5, 4, 4, 0.5);
-    transform: scale(0.1, 1);
-  }
-  .btn-one:hover span {
-    letter-spacing: 2px;
-  }
-  .btn-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
-  }
-  .btn-one::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.3s;
-    background-color: rgba(255,255,255,0.1);
-  }
-  .btn-one:hover::after {
-    opacity: 0; 
-    transform: scale(0.1, 1);
-  }
-  
-  
-  /*
