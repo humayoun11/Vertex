@@ -357,7 +357,7 @@ main{
 }
 .symptom-headings img{
     justify-content: center;
-    padding-top: 13px;
+    margin-top: 13px;
     width: 200px;
     height: 200px;
     animation: mymove 80s infinite;
@@ -410,10 +410,112 @@ font-family: poppins;
 color: #060d58;
 }
 
-/*-----------------------------viruses banner 2----------------------------*/
-.viruses-banner-2{
-    background-color: #0e30a2;
-    background-image: linear-gradient(160deg, #0e30a2 48%, #052629 98%);
+/*-----------------------------viruses banner 2(types of viruses)----------------------------*/
+#vid-parents{
+    position: relative;
     width: 100%;
-    height: 500px;
+    height: 250vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+   background-attachment: fixed;
 }
+#my-vi-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+#div-content{
+   color: #FFF;
+   text-align: center;
+   justify-content: center;
+}
+#div-content img{
+    width: 100px;
+    margin-top: 10px;
+    height: 100px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+}
+#div-content h1{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    padding-top: 7px;
+
+}
+#div-content p{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: poppins;
+}
+
+/*--------------------------------tyes of viruses(cards-)----------------------*/
+.card-body h5{
+    font-family: 'Fredoka One', cursive;
+    margin: 5px;
+    color: white;
+}
+.card-body p{
+font-size: 13px;
+color:gray;
+}
+.card-body a{
+    background:  rgb(109, 236, 119);
+    color: white;
+    border: none;
+}
+.card-body a:hover{
+    background: none;
+   color: white;
+   border: 1px solid white;
+   box-shadow: 7px 7px 7px black;
+}
+.cards{
+    padding-top: 30px;
+    margin-left: 10px;
+   box-shadow: 7px 7px 7px black;
+   height: 440px;
+    
+}
+.cards:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.cards img{
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
