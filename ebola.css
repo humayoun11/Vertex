@@ -64,8 +64,7 @@
     text-decoration: underline;
 }
 .navlinks ul ul{
-    display: none;
-   
+    display: none;  
 }
 .dropdown-menu li{ 
     font-family: poppins;
@@ -267,34 +266,38 @@
     flex-wrap: wrap;
 
   }
-  #measles-vaccines{
+#measles-vaccines{
     font-family: poppins;
     text-align: center;
     justify-content: center;
   }
-  .vaccination-imgs img{
+.vaccination-imgs img{
     width: 250px;
     height: 250px;
     border-radius: 130px;
     margin: 10px;
   }
-  .vaccination p{
+.vaccination p{
     color: gray;
     font-family: poppins;
     font-weight: 600;
   }
+  
    /*---------------------------measles graph------------------------*/
-   .ebola-gragh{
-    text-align: center;
-    justify-content: center;
-  }
-  .ebola-gragh img{
-    width: 100%;
-    height: 100vh;
+.ebola-gragh{
+ 
+    background-image:
+    url(ebolagraph.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 120vh;
+   background-attachment: fixed;
   }
 
   /*------------------------------ebola video table--------------------*/
-  #ebola-vid-parents{
+#ebola-vid-parents{
     position: relative;
     width: 100%;
     height: 110vh;
@@ -321,7 +324,7 @@
     color: #FFF;
     margin-top: 15px;
   }
-  #customers tr th{
+#customers tr th{
     text-align: center;
     justify-content: center;
     font-family: 'Fredoka One' ,cursive;
@@ -330,30 +333,28 @@
    
   }
   
-  #customers td, #customers th {
+#customers td, #customers th {
     border: 1px solid #ddd;
     padding: 8px;
   }
   
-  #customers tr:nth-child(even){background-color: transparent;}
+#customers tr:nth-child(even){background-color: transparent;}
   
-  #customers tr:hover {background-color: transparent;}
+#customers tr:hover {background-color: transparent;}
   
-  #customers th {
+#customers th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: transparent;
     color: white;
   }
-
-
-  .table-text{
+.table-text{
     display: flex;
     width: 100%;
     height: 630px;
-    background-color: #352e6e;
-    color: #FFF;
+    background-color: #e7eaf3;
+    color: black;
 }
 .table-text img{
     width: 750px;
@@ -364,9 +365,113 @@
 .table-p{
     margin: 10px;
     font-size: 18px;
-    font-family: poppins;
-   
+    font-family: 'fredoka One' ,cursive;
 }
 .table-p p{
-    line-height: 2;
+    line-height: 30px;
+    font-family: poppins;
 }
+
+/*-------------------------------footer----------------------*/
+.footer-section{
+    background-color: #0d524b;
+    background-image: linear-gradient(160deg, #0d524b 0%, #050e5c 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    background-attachment: fixed;
+}
+.footer{
+    display: flex;
+}
+.vertex-logo-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo-footer img{
+    width: 70px;
+    height: 70px;
+    /* margin-left: 10px; */
+    /* margin-top: 20px; */
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+  .vertex-logo-footer h4{
+    font-size: 30px;
+/* padding-top: 40px; */
+    /* margin-left: 5px; */
+    font-family: 'Fredoka One', cursive;
+  }
+  .footer-paragraph p{
+    color: white;
+    font-family: poppins;
+    /* margin: 15px; */
+    font-size: 15px;
+  }
+  .footer-paragraph h5{
+    font-family: poppins;
+    color: white;
+    font-size: 14px;
+    /* margin-left: 15px; */
+  }
+
+  .fa-brands{
+    /* padding-top: 4px; */
+    color: gray;
+    /* margin: 5px; */
+    font-size: 20px;
+    /* margin: 10px; */
+}
+.fa-brands:hover{
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 23px; 
+} 
+.footer2{
+    display: flex;
+    color: #FFF;
+    justify-content: space-evenly;
+}
+.footer2 ul li{
+    list-style: none;
+    line-height: 40px;
+    font-size: 15px !important;
+    font-family: poppins;
+}
+.footer2 ul li:hover{
+cursor: pointer;
+font-weight: 700;
+text-decoration: underline;
+font-size: 15px !important;
+
+}
+.footer2 ul h3{
+    font-family: 'fredoka One', cursive;
+    font-size: 18px;
+    color: greenyellow;
+    letter-spacing: 1px;
+}
+.footer2 ul h4{
+    font-family: raleway;
+    font-size: 22px;
+    /* margin-top: 20px; */
+    font-weight: 650;
+}
+.copyright{
+    text-align: center;
+    justify-content: center;
+    color: gainsboro;
+    font-family: poppins;
+    opacity: 0.4;
+}
+.copyright h5{
+    font-size: 13px;
+    /* margin-top: 20px; */
+}
+
+

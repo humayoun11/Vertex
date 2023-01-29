@@ -385,8 +385,6 @@ height: 730px;
     font-size: 20px;
     margin-right: 7px;
 }
-
-
 /*--------------------------------analytics table-------------------------*/
 .table-text{
     display: flex;
@@ -405,81 +403,76 @@ height: 730px;
     margin: 10px;
     font-size: 18px;
     font-family: poppins;
-   
 }
 .table-p p{
     line-height: 2;
 }
-
-
-
 #customers {
     font-family: poppins;
     border-collapse: collapse;
     width: 100%;
   }
-  #customers tr th{
+#customers tr th{
     text-align: center;
     justify-content: center;
     font-family: 'Fredoka One' ,cursive;
     font-weight: 300;
     letter-spacing: 1px;
-  }
+}
   
-  #customers td, #customers th {
+#customers td, #customers th {
     border: 1px solid #ddd;
     padding: 8px;
-  }
+}
   
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(even){background-color: #f2f2f2;}
   
-  #customers tr:hover {background-color: #ddd;}
+#customers tr:hover {background-color: #ddd;}
   
-  #customers th {
+#customers th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #352e6e;
     color: white;
-  }
+}
   /*---------------------------measles graph------------------------*/
-  .measles-gragh{
+.measles-gragh{
     text-align: center;
     justify-content: center;
-  }
-  .measles-gragh h3{
+}
+.measles-gragh h3{
     font-family: poppins;
     font-size: 30px;
-  }
-  .measles-gragh img{
+}
+.measles-gragh img{
     width: 100%;
     height: 180vh;
-  }
+}
   /*---------------------------------------vaccination----------------------------*/
-  .vaccination{
+.vaccination{
     justify-content: center;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-
-  }
-  #measles-vaccines{
+}
+#measles-vaccines{
     font-family: poppins;
     text-align: center;
     justify-content: center;
-  }
-  .vaccination-imgs img{
+}
+.vaccination-imgs img{
     width: 250px;
     height: 250px;
     border-radius: 130px;
-  }
-  .vaccination p{
+}
+.vaccination p{
     color: gray;
     font-family: poppins;
     font-weight: 600;
-  }
+}
 
-  .footer-section{
+.footer-section{
     background-color: #0d524b;
     background-image: linear-gradient(160deg, #0d524b 0%, #050e5c 100%);
     background-position: center;
@@ -506,24 +499,24 @@ height: 730px;
 @keyframes mymove {
     50% {transform: rotate(480deg);}
   }
-  .vertex-logo-footer h4{
+.vertex-logo-footer h4{
     font-size: 30px;
 /* padding-top: 40px; */
     /* margin-left: 5px; */
     font-family: 'Fredoka One', cursive;
   }
-  .footer-paragraph p{
+.footer-paragraph p{
     color: white;
     font-family: poppins;
     /* margin: 15px; */
     font-size: 15px;
-  }
+}
   .footer-paragraph h5{
     font-family: poppins;
     color: white;
     font-size: 14px;
     /* margin-left: 15px; */
-  }
+}
 
   .fa-brands{
     /* padding-top: 4px; */

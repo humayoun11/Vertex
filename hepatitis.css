@@ -1,15 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,800;0,900;1,100&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.hepatitis{
-    background-image:   linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuoM_H99EqfVLxG0Whbw0QoIpIm-US0ERJ5Q&usqp=CAU);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.navbar{
+    height: 85px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    height: 500px;
+    position: fixed;
+    background: rgb(20, 20, 90);
+    opacity: 0.8;
+    
+}
+.vertex-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+    margin-top: -10px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+.vertex-logo h4{
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-top: 13px;
+  margin-left: 5px;
+  font-family: 'Fredoka One', cursive;
+}
+/*.navlinks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 
+}*/
+.navlinks{
+    opacity: none;
+}
+.navlinks ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    }
+.navlinks ul li{
+    list-style: none;
+    margin: 10px;
+    font-family: poppins;
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navlinks ul li a:hover{
+    color: rgb(52, 192, 235);
+    transition: 0.2s ease-in;
+    text-decoration: underline;
+}
+.navlinks ul ul{
+    display: none;
+}
+.dropdown-menu li{ 
+    font-family: poppins;
+  background-color: rgb(25, 25, 65);
+ border-radius: 10px;
+ font-size: small;
+ height: 30px;
+ padding: 7px;
 
 }
+.navlinks ul li:hover .dropdown-menu{
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    background-color: #FFF;
+}
+.login-signup{
+    padding-top: 2px;
+    margin-right: 20px;
+}
+.login-signup a button{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    background: none;
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+    font-size: 15px;
+}
+.login-signup a button:hover{
+    transition: 0.3s ease-in;
+    opacity: 0.8;
+    color: rgb(52, 192, 235);
+}
+.fa-brands{
+    padding-top: 4px;
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+}
+.fa-brands:hover{
+    transition: 0.3s ease-in;
+    color: grey;
+    cursor: pointer;
+} 
+/* navbar sec end */
+/*-----------------------------------banner------------------------*/
+.hepatits-banner{
+    background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)),url(Viral-Hepatitis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    background-attachment: fixed;
+}
+/*banner text*/
+.banner-text h1{
+    font-family: 'Fredoka One' ,cursive;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: rgb(210, 210, 226);
+    font-size: 100px;
+    text-shadow: 7px 7px 10px black;
+}
+.banner-text{
+    text-align: center;
+    justify-content: center;
+}
+.banner-text img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+}
+.banner-text-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #FFF;
+    font-family: 'fredoka one' ,cursive;
+}
+
+
+/*-------------------------------------------intro------------------------------------------*/
+.hepatitis-img img{
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+}
+.hep-sec{
+    display: flex;
+    width: 100%;
+    height: 480px;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+}
+.hep-para1 h4{
+    font-family: raleway;
+   margin-top: 40px;
+   font-size: 15px;
+   text-align: center;
+   color: rgb(229, 132, 132);
+}
+.hep-para1 h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.hep-para1 p{
+    font-size: 18px;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    justify-content: center;
+    font-family: raleway;
+}
+/*-------------------------types----------------------*/
+.types-heading{
+    width: 100%;
+    height: 110vh;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+    text-align: center;
+    justify-content: center;
+}
+.types-heading h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.types-heading p{
+    font-size: 18px;
+    color: white;
+    font-family: raleway;
+    margin: 20px;
+}
+.hep-types{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.types-content{
+    width: 300px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px black;
+   
+}
+.types-content img{
+    height: 150px;
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.types-content h4{
+    color: #FFF;
+    font-family: 'fredoka one' ,cursive;
+    padding-top: 7px;
+}
+.types-content p{
+    font-family: poppins;
+}
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: poppins;
+}
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    width: 150px;
+}
+.btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+.btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+/*-------------------------------symptoms-----------------------*/
+.heading{
+    text-align: center;
+    font-family: raleway;
+    font-size: 30px;
+    width: 100%;
+    height: 450px;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+}
+.heading img{
+    width: 150px;
+    margin-top: 10px;
+    height: 150px;
+}
+.heading h1{
+    font-family: 'fredoka one',cursive;
+    color: greenyellow;
+}
+.symptom-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#card-1 img{
+    width: 150px;
+    height: 150px;
+    margin: 13px;
+}
+#card-1 h2{
+    font-size: 13px;
+    font-family: 'Fredoka One' ,cursive;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/*--------------------hep-a-----------------------*/
+.hepatitis-a-img img{
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+}
+.hep-a-sec{
+    display: flex;
+    width: 100%;
+    background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)),url(Viral-Hepatitis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.hep-a-para1 {
+    margin: 20px;
+}
+.hep-a-para1 h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.hep-a-para1 p{
+    font-size: 18px;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    justify-content: center;
+    font-family: raleway;
+}
+.hep-a-para1 h5{
+    color: #FFF;
+    font-family: poppins;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.hep-a-para1 h6{
+    color: #FFF;
+    font-family: poppins;
+    font-size: 15px;
+}
+.fa-solid{
+    color: greenyellow;
+    font-size: 20px;
+    /* margin-right: 7px; */
+}
+
+
+.stats-h1{
+    text-align: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Fredoka One' ,cursive;
+}
+#customers {
+    font-family: poppins;
+    border-collapse: collapse;
+    width: 100%;
+    color: #FFF;
+    height: 100vh;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+    background-attachment: fixed;
+  }
+#customers tr th{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Fredoka One' ,cursive;
+    font-weight: 300;
+    letter-spacing: 1px;
+   
+  }
+  
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+#customers tr:nth-child(even){background-color: transparent;}
+  
+#customers tr:hover {background-color: transparent;}
+  
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+  }
