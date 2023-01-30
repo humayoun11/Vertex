@@ -431,3 +431,162 @@
     background-color: transparent;
     color: white;
   }
+  .hep-graph{
+    width: 100%;
+    height: 100vh;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+  }
+  .hep-graph h1{
+    text-align: center;
+    justify-content: center;
+    color: greenyellow;
+    font-family: 'Fredoka One' ,cursive;
+    padding: 7px;
+    letter-spacing: 1px;
+  }
+  .hep-graph img{
+    width: 100%;
+    height: 550px;
+  }
+
+  #hep-vid-parents{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+   background-attachment: fixed;
+}
+#hep-vid-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+#hep-vid-parents h3{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Fredoka One' ,cursive;
+    padding-top: 100px;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+#hep-vid-parents h4{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Fredoka One' ,cursive;
+    padding-top: 70px;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+/*-------------------------------footer----------------------*/
+.footer-section{
+    background-color: #0d524b;
+    background-image: linear-gradient(160deg, #0d524b 0%, #050e5c 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    background-attachment: fixed;
+}
+.footer{
+    display: flex;
+}
+.vertex-logo-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo-footer img{
+    width: 70px;
+    height: 70px;
+    /* margin-left: 10px; */
+    /* margin-top: 20px; */
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+  .vertex-logo-footer h4{
+    font-size: 30px;
+/* padding-top: 40px; */
+    /* margin-left: 5px; */
+    font-family: 'Fredoka One', cursive;
+  }
+  .footer-paragraph p{
+    color: white;
+    font-family: poppins;
+    /* margin: 15px; */
+    font-size: 15px;
+  }
+  .footer-paragraph h5{
+    font-family: poppins;
+    color: white;
+    font-size: 14px;
+    /* margin-left: 15px; */
+  }
+
+  .fa-brands{
+    /* padding-top: 4px; */
+    color: gray;
+    /* margin: 5px; */
+    font-size: 20px;
+    /* margin: 10px; */
+}
+.fa-brands:hover{
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 23px; 
+} 
+.footer2{
+    display: flex;
+    color: #FFF;
+    justify-content: space-evenly;
+}
+.footer2 ul li{
+    list-style: none;
+    line-height: 40px;
+    font-size: 15px !important;
+    font-family: poppins;
+}
+.footer2 ul li:hover{
+cursor: pointer;
+font-weight: 700;
+text-decoration: underline;
+font-size: 15px !important;
+
+}
+.footer2 ul h3{
+    font-family: 'fredoka One', cursive;
+    font-size: 18px;
+    color: greenyellow;
+    letter-spacing: 1px;
+}
+.footer2 ul h4{
+    font-family: raleway;
+    font-size: 22px;
+    /* margin-top: 20px; */
+    font-weight: 650;
+}
+.copyright{
+    text-align: center;
+    justify-content: center;
+    color: gainsboro;
+    font-family: poppins;
+    opacity: 0.4;
+}
+.copyright h5{
+    font-size: 13px;
+    /* margin-top: 20px; */
+}
+
