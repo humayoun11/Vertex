@@ -179,44 +179,56 @@
 
 
 /*-------------------------------------------intro------------------------------------------*/
-.hepatitis-img img{
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-}
 .hep-sec{
     display: flex;
     width: 100%;
+    justify-content: center;
+    gap: 10px;
     height: 480px;
+    text-align: justify;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
     background: rgb(83,100,213);
     background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
 }
-.hep-para1 h4{
+.hep-sec h4{
     font-family: raleway;
-   margin-top: 40px;
+   /*margin-top: 40px;*/
    font-size: 15px;
    text-align: center;
    color: rgb(229, 132, 132);
 }
-.hep-para1 h1{
+.hep-sec h1{
     font-family: 'fredoka one' ,cursive;
     font-size: 30px;
     color: white;
     font-weight: 700;
-    text-align: center;
-    justify-content: center;
     letter-spacing: 2px;
 }
-.hep-para1 p{
+.hep-sec p{
     font-size: 18px;
     color: white;
     line-height: 35px;
-    text-align: center;
-    justify-content: center;
     font-family: raleway;
 }
 /*-------------------------types----------------------*/
+
+.parent{
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .types-heading{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+/* .types-heading{
     width: 100%;
     height: 110vh;
     background: rgb(83,100,213);
@@ -241,8 +253,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.types-content{
+} */
+/* .types-content{
     width: 300px;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -265,6 +277,46 @@
 }
 .types-content p{
     font-family: poppins;
+} */
+
+.parent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.types-heading h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.types-heading p{
+    font-size: 18px;
+    color: white;
+    font-family: raleway;
+}
+.types-content{
+    max-width: 300px;
+    background-color: black;
+    color: white;
+    font-family: poppins;
+    font-size: 13px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px black;
+}
+.types-content:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.types-content img{
+max-width: 250px;
+max-height: 300px;
 }
 /* 
 ========================
@@ -321,14 +373,13 @@
     font-family: raleway;
     font-size: 30px;
     width: 100%;
+    padding: 20px;
     height: 450px;
     background: rgb(83,100,213);
     background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
-}
-.heading img{
-    width: 150px;
-    margin-top: 10px;
-    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .heading h1{
     font-family: 'fredoka one',cursive;
@@ -337,13 +388,11 @@
 .symptom-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-evenly;   
 }
 #card-1 img{
     width: 150px;
     height: 150px;
-    margin: 13px;
 }
 #card-1 h2{
     font-size: 13px;
@@ -354,39 +403,44 @@
 
 /*--------------------hep-a-----------------------*/
 .hepatitis-a-img img{
-    width: 600px;
-    height: 400px;
-    margin: 10px;
+    max-width: 400px;
+    max-height: 400px;
+   
 }
 #hep-a-sec{
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)),url(Viral-Hepatitis.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100vh;  
+    text-align: justify;
     background-attachment: fixed;
 }
-.hep-a-para1 {
+/* .hep-a-para1 {
     margin: 20px;
-}
+} */
 .hep-a-para1 h1{
     font-family: 'fredoka one' ,cursive;
     font-size: 30px;
     color: white;
     font-weight: 700;
-    text-align: center;
-    justify-content: center;
+    /* text-align: justify;
+    justify-content: center; */
     letter-spacing: 2px;
 }
 .hep-a-para1 p{
     font-size: 18px;
     color: white;
     line-height: 35px;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     font-family: raleway;
+    max-width: 600px;
 }
 .hep-a-para1 h5{
     color: #FFF;
@@ -420,6 +474,9 @@
     height: 100vh;
     background: rgb(83,100,213);
     background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
   }
 #customers tr th{
@@ -503,7 +560,53 @@
     letter-spacing: 1px;
     font-size: 35px;
 }
+/*--------------------------prevention---------------------------------*/
+.p-cards{
+    width: 100%;
+    height: 80vh;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+}
+.p-cards h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 60px;
+    background: -webkit-linear-gradient(#F0F8FF,#318CE7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p-cards img{
+  height: 200px;
+  width: 200px;
+}
+.card h4{
+    font-family: 'fredoka one' ,cursive;
+    font-weight: 700;
+    color: greenyellow;
+    letter-spacing: 1px;
+    position: relative;
+}
+.card h4::before{
+    content: '';
+    position: absolute;
+    left: 6px;
+    bottom: -6;
+    width: 63px;
+    height: 4px;
+    background-color: greenyellow;
 
+    }
+.card p{
+    font-family: poppins;
+    color: white;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
 /*-------------------------------footer----------------------*/
 .footer-section{
     background-color: #0d524b;
