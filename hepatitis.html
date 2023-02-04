@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="hepatitis.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
     <!------------------------------navbar------------------------------------>
@@ -60,40 +61,26 @@
   </div>
     <br>
     <div class="banner-text-flex">
-     <h4>Cases in a day: <span style="color: greenyellow;">999954</span></h4>
-     <h4>Number of deaths: <span style="color: greenyellow;">378804</span></h4>
-     <h4>Recovered Cases: <span style="color: greenyellow;">3567004</span></h4>
+     <h4 class="counter">Cases in a day: <span style="color: greenyellow;">999954</span></h4>
+     <h4 class="counter">Number of deaths: <span style="color: greenyellow;">378804</span></h4>
+     <h4 class="counter">Recovered Cases: <span style="color: greenyellow;">3567004</span></h4>
     </div>
     <br>
 </div>
-
 <!-----------------------------------------introduction---------------------->
 <div class="hep-sec">
-<div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
             <div class="col-md-6">
-                <h1>What is <span style="color: greenyellow;">Hepatitis</span>?</h1>
-                <p>Viral hepatitis is an inflammation of your liver that's caused by a virus. There are five types, but the most common ones in the U.S. are hepatitis A, B, and C. All of them affect your liver. Some of the symptoms are similar, but they have different treatments.Hepatitis Delta is considered to be the most severe form of hepatitis because of its potential to quickly lead to more serious liver disease than hepatitis B alone. Of the 292 million people living with chronic hepatitis B, approximately 15-20 million are also living with hepatitis D.</p>
-            </div>
-            <div class="col-md-6">
+                 <h1>What is <span style="color: greenyellow;">Hepatitis</span>?</h1>
+                    <p>Viral hepatitis is an inflammation of your liver that's caused by a virus. There are five types, but the most common ones in the U.S. are hepatitis A, B, and C. All of them affect your liver. Some of the symptoms are similar, but they have different treatments.Hepatitis Delta is considered to be the most severe form of hepatitis because of its potential to quickly lead to more serious liver disease than hepatitis B alone. Of the 292 million people living with chronic hepatitis B, approximately 15-20 million are also living with hepatitis D.</p>
+                       </div>
+                   <div class="col-md-6">
                 <img src="hepatitis-intro.png" class="img-fluid" alt="dhdhhjd">
             </div>
-        </div>
-    </div>
-    </div>
-
-
-<!--div class="hep-sec">
-    <div class="hepatitis-img">
-        <img src="hepatitis-intro.png" alt="">
-    </div>
-    <div class="hep-para1">
-        <h4>July,19,2022</h4>
-        <h1>What is <span style="color: greenyellow;">Hepatitis</span>?</h1>
-        <br>
-        <p>Hepatitis means inflammation of the liver. The liver is a vital organ that processes nutrients, filters the blood, and fights infections. When the liver is inflamed or damaged, its function can be affected. Heavy alcohol use, toxins, some medications, and certain medical conditions can cause hepatitis.Hepatitis can be caused by: Immune cells in the body attacking the liver. Infections from viruses (such as hepatitis A, hepatitis B, or hepatitis C), bacteria, or parasites. Liver damage from alcohol or poison.</p>
-    </div>
-    </div-->
+         </div>
+      </div>
+  </div>
     <!-----------------------------types------------------>
     <div class="parent">
         <div class="types-heading col-lg-12">
@@ -150,7 +137,6 @@
     </div>
 </div>
 <!------------------------------------Hepatitis A---------------------------->
-
 <div id="hep-a-sec">
     <div class="hep-a-para1">
         <h1>What is <span style="color: greenyellow;">Hepatitis A</span>?</h1>
@@ -166,9 +152,7 @@
         <img src="hepabg.png" alt="">
     </div>
     </div>
-
     <!------------------------------------Hepatitis B--------------------------->
-
 <div id="hep-a-sec">
     <div class="hepatitis-a-img">
         <img src="hepBtypes.png" alt="">
@@ -184,10 +168,7 @@
         <h6><i class="fa-solid fa-square-check"></i> Nausea and vomiting</h6>
     </div>
     </div>
-
-
   <!------------------------------------Hepatitis C-------------------------->
-
   <div id="hep-a-sec">
     <div class="hep-a-para1">
         <h1>What is <span style="color: greenyellow;">Hepatitis C</span>?</h1>
@@ -203,9 +184,7 @@
         <img src="hep c type.png" alt="">
     </div>
     </div>
-
 <!------------------------------------Hepatitis D------------------------->
-
 <div id="hep-a-sec">
     <div class="hepatitis-a-img">
         <img src="hep e type.png" alt="">
@@ -302,27 +281,6 @@
     <h1>Statistics for Hepatitis Disease</h1>
     <img src="hepdata.png" alt="">
   </div>
-  <!--div class="heading">
-    <h1>SYMPTOMS</h1>
-<div class="symptom-cards">
-    <div id="card-1">
-        <img src="fatigue.png" alt="">
-        <h2>FATIGUE</h2>
-    </div>
-    <div id="card-1">
-        <img src="passivebehavior.png" alt="">
-        <h2>PASSIVE BEHAVIOR</h2>
-    </div>
-    <div id="card-1">
-        <img src="nosebleeding.png" alt="">
-        <h2>NOSE BLEEDING</h2>
-    </div>
-    <div id="card-1">
-        <img src="backpain.png" alt="">
-        <h2>MUSCLE PAIN</h2>
-    </div>
-</div>
-</div-->
   <!----------------------------------symptoms----------------------->
 <div class="p-cards">
     <h1 class="text-center">Symptoms</h1>
@@ -406,36 +364,11 @@
                         <h4>Wash hands</h4>
                       <p class="card-text">Hepatitis can be prevented from washing dirty and infected hands .</p>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-
-<!--div class="heading">
-    <img src="funfact-virus-1-2.png" alt="">
-    <h1>PREVENTIONS</h1>
-<div class="symptom-cards">
-    <div id="card-1">
-        <img src="vaccination.png" alt="">
-        <h2>Vaccination</h2>
-    </div>
-    <div id="card-1">
-        <img src="avoidjunk.png" alt="">
-        <h2>Avoid unhealthy food</h2>
-    </div>
-    <div id="card-1">
-        <img src="medicalcheckup.png" alt="">
-        <h2>Seek medical help</h2>
-    </div>
-    <div id="card-1">
-        <img src="washinghands.png" alt="">
-        <h2>Wash hands</h2>
-    </div>
-</div>
-</div-->
-
 <!------------------------hep video banner------------->
 <div id="hep-vid-parents">
     <video id="hep-vid-child" autoplay loop muted>
@@ -522,8 +455,18 @@
   <div class="copyright">
    <h5> © 2022 Vertex Research center, All Rights Reserved</h5>
   </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+  });
   
-
+      });
+     
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
