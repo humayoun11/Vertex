@@ -21,8 +21,13 @@ function registration() {
   localStorage.setItem('localUsername', username)
   localStorage.setItem('localUserEmail', email)
   localStorage.setItem('localUserPassword', password)
-
-  alert('registration successfull')((window.location.href = 'loginsignup.html'))
+  if (username.length >= 6 && email.length >= 6 && password.length >= 6) {
+    alert('registration successfull')(
+      (window.location.href = 'loginsignup.html'),
+    )
+  } else {
+    alert('Please Fill Complete form')
+  }
 }
 function login() {
   var adminuser = 'admin'
