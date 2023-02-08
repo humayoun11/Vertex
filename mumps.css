@@ -255,12 +255,13 @@
   width: 200px;
 }
 .card h4{
-    font-family: 'fredoka one' ,cursive;
-    color: black;
+    font-family: raleway;
+    color: rgb(1, 1, 43);
+    font-weight: 600;
     letter-spacing: 1px;
     position: relative;
 }
-.card h4::before{
+/* .card h4::before{
     content: '';
     position: absolute;
     left: 6px;
@@ -269,10 +270,11 @@
     height: 4px;
     background-color: blue;
 
-    }
+    } */
 .card p{
     font-family: poppins;
-   color: #000;
+    font-weight: bold;
+   color: rgb(112, 112, 209);
 }
 .card:hover{
     transform: scale(1.1);

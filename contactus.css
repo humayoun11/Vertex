@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto+Serif:ital,opsz,wght@1,8..144,300&display=swap');
 
+ @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
 
 
 *{
@@ -169,6 +171,89 @@ border-bottom: 1px solid black;
 .fa-sharp{
     color: brown;
 }
+/* `````````````````````````````````````````main````````````````````````````````````` */
+main{
+    background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)),
+    url(viruses\ banner.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100vh;
+   background-attachment: fixed;
+}
+.banner-txt{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Fredoka One' !important;
+}
+.banner-txt h1{
+    font-size: 50px;
+    font-family: 'Fredoka One' !important;   
+}
+/* `````````````````````````````````dunya`````````````````````` */
+.banner-txt img{
+    animation: mymove 80s infinite;
+    width: 200px;
+    height: 200px;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+}
+/* ``````````````````````````````button sec```````````````````````` */
+.buttons{
+    text-align: center;
+  }
+  /* 
+  ========================
+      BUTTON THREE
+  ========================
+  */
+  .btn-three a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Poppins;
+    letter-spacing: 1px;
+  }
+  .btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    width: 150px;
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.5);
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
 /*------------------shop by category-----------------*/
 .shop-by-ctgry h1{
     font-family: raleway;
@@ -617,5 +702,60 @@ font-size: 15px !important;
         }
       
         .label{
-          color: red;
+          color: rgb(4, 4, 71);
+          font-weight: 600;
+          font-family: raleway;
+        }
+        .button1{
+            text-align: center;
+        }
+        /* 
+        ========================
+              BUTTON THREE
+        ========================
+        */
+        .btn-three1 a{
+            text-decoration: none;
+            color: black !important;
+            font-family: poppins;
+            font-weight: 600;
+        }
+        .btn-three1 {
+            /* color: black !important; */
+            transition: all 0.5s;
+            position: relative;
+            width: 150px;
+            
+        }
+        .btn-three1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(255,255,255,0.30) !important ;
+            transition: all 0.3s;
+        }
+        .btn-three1:hover::before {
+            opacity: 0 ;
+            transform: scale(0.5,0.5);
+        }
+        .btn-three1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            transition: all 0.3s;
+            border: 1px solid rgba(255,255,255,0.30) !important;
+            transform: scale(1.2,1.2);
+        }
+        .btn-three1:hover::after {
+            opacity: 1;
+            transform: scale(1,1);
         }
