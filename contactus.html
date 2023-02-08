@@ -1,0 +1,214 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertex Research center</title>
+    <link rel="stylesheet" href="userhome.css" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="mumps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+
+  <body>
+    
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-12">
+            <div class="navbar">
+                <div class="vertex-logo">
+                    <img src="animationimge.png" alt="">
+                    <h4><span style="color: white;">VER</span><span style="color: rgb(158, 253, 16);">TEX</span></h4>
+                </div>
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="home.html">Home</li></a>
+                        <li><a href="">Viral Diseases <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mumps.html">Measles & Mumps</a></li>
+                                <li><a href="covid.html">Covid-19</a></li>
+                                <li><a href="hepatitis.html">Hepatitis</a></li>
+                                <li><a href="ebola.html">Ebola</a></li>
+                                <li><a href="polio.html">Polio</li></a>
+                                </ul>
+                            </li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="location.html">Location</a></li>
+                            <div class="login-signup">
+                          <a href="loginsignup.html">
+                            <button>Login/signup</button>
+                          </a>
+                        </div>
+                    </ul>
+                          <!----------------nav icons----------------->
+                    <!--i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-pinterest-p"></i-->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactusemail">
+        <h6 class="h2">Contact US</h6>
+        <span>Email:complaints@ashleyglobal.com</span><br /><br />
+        <button onclick="contactus()" class="contactbutton" id="contactbutton">
+          Contact Us
+        </button>
+      </div>
+      <div id="contactform" class="contactform">
+        <div class="contactform-content">
+          <h6 class="h2">Contact Us</h6>
+          <label class="label" for="name">Name</label>
+          <br />
+          <input
+            class="widt"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+          <br />
+          <label class="label" for="email">Email</label><br />
+          <input
+            class="widt"
+            type="Email"
+            name="name"
+            id="email"
+            placeholder="Email"
+          />
+          <label class="label" for="phonenumber">Phone Number</label><br />
+          <input
+            class="widt"
+            type="text"
+            name="phonenumber"
+            id="phonenumber"
+            placeholder="Phone Number"
+          />
+          <label class="label" for="email"
+            >Location (So that we could direct to appropriate office)</label
+          >
+          <input
+            class="widt"
+            type="text"
+            name="name"
+            id="location"
+            placeholder="city / location"
+          />
+          <br />
+          <label class="label" for="Department">Department</label>
+          <br />
+          <select class="widt" name="departments" id="departments">
+            <option value="coloring">Select</option>
+            <option value="coloring">Coloring</option>
+            <option value="coloring">Coloring</option>
+            <option value="coloring">Coloring</option>
+            <option value="coloring">Coloring</option>
+          </select>
+          <br />
+          <label class="label" for="Type">Type</label>
+          <br />
+          <select class="widt" name="type" id="type">
+            <option value="type">Select</option>
+            <option value="type1">type1</option>
+            <option value="type2">type2</option>
+            <option value="type3">type3</option>
+            <option value="type4">type4</option>
+          </select>
+          <br />
+          <br />
+          <textarea
+            class="widt"
+            id="w3review"
+            name="w3review"
+            rows="4"
+            cols="50"
+            placeholder=" Write your message here"
+          ></textarea>
+          <br />
+          <div class="buttondiv">
+            <button onclick="submit()" class="contactformbutton">Submit</button>
+            <button onclick="cancel()" class="contactformbutton">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <div id="contactsubmit" class="contactsubmit">
+        <div class="contactsubmit-content">
+          <h6>Name</h6>
+          <h6 id="showuser">abcd</h6>
+          <h6>Email</h6>
+          <h6 id="showemail">abcd</h6>
+          <h6>Phone Number</h6>
+          <h6 id="showphonenumber">abcd</h6>
+          <h6>
+            congratulations your message submitted successfully we will contact as
+            your given contact or email within 24 hours
+          </h6>
+          <button onclick="thankyou()" class="contactformbutton">
+            Thank You
+          </button>
+        </div>
+      </div>
+  
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        var contactform = document.getElementById('contactform');
+        var contactsubmit = document.getElementById('contactsubmit');
+  
+        function contactus() {
+          contactform.style.display = 'block';
+        }
+  
+        function submit() {
+          var contactuser = document.getElementById('name').value;
+          var contactnumber = document.getElementById('phonenumber').value;
+          var contactemail = document.getElementById('email').value;
+          contactform.style.display = 'none';
+          contactsubmit.style.display = 'block';
+  
+          localStorage.setItem('contactname', contactuser);
+          localStorage.setItem('contactemail', contactemail);
+          localStorage.setItem('contactnumber', contactnumber);
+  
+          var username = localStorage.getItem('contactname');
+          var useremail = localStorage.getItem('contactemail');
+          var usernumber = localStorage.getItem('contactnumber');
+          document.getElementById('showuser').innerHTML = username;
+          document.getElementById('showemail').innerHTML = useremail;
+          document.getElementById('showphonenumber').innerHTML = usernumber;
+        }
+  
+        function cancel() {
+          contactform.style.display = 'none';
+        }
+        function thankyou() {
+          contactsubmit.style.display = 'none';
+        }
+      </script>
+    
+  </body>
+</html>
