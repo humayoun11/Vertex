@@ -61,14 +61,20 @@
       </div>
         <br>
         <div class="buttons">
-          <div class="btn btn-three">
+          <!-- <div class="btn btn-three">
             <a href="">
-          <span>LOGIN</span></a>
-        </div>
-        <div class="btn btn-three">
-          <a href="">
-        <span>REGISTRATION</span></a>
-      </div>
+          <span onclick="loginpageselect()">LOGIN</span></a>
+        </div> -->
+
+        <!-- <div class="btn btn-three">
+        <button onclick="registrationpageselect()">REGISTRATION</button>
+      </div> -->
+      <button class="btn btn-three" onclick="loginpageselect()">
+        LOGIN
+      </button>
+      <button class="btn btn-three" onclick="registrationpageselect()">
+        REGISTRATION
+      </button>
         </div>
         <br>
 
@@ -76,13 +82,14 @@
     <!-- `````````````````````````````````````````````````````````````````````` -->
 
     <div class="selectpage" id="selectpage">
-        <button class="selectbutton" onclick="loginpageselect()">Login</button>
-        <button class="selectbutton" onclick="registrationpageselect()">
-          Registration
+        <button class="btn btn-three" onclick="loginpageselect()">LOGIN</button>
+        <button class="btn btn-three" onclick="registrationpageselect()">
+          REGISTRATION
         </button>
       </div>
       <div class="login-wrapper" id="loginpage">
         <form action="" class="form">
+          <span class="close">&times;</span>
           <img src="avatar.png" alt="" />
           <h2>Login</h2>
           <div class="input-group">
@@ -125,8 +132,9 @@
       </div>
       <div class="login-wrapper" id="registrationpage">
         <form action="" class="form">
+          <span class="close close2">&times;</span>
           <img src="avatar.png" alt="" />
-          <h2>Login</h2>
+          <h2>Registration</h2>
           <div class="input-group">
             <input type="text" name="RUser" id="RUser" required />
             <label for="RUser">User Name</label>
@@ -177,4 +185,18 @@
    
   </body>
   <script src="loginregister.js"></script>
+  <script>
+    // Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  console.log('humayoun')
+  loginpage.style.display = "none";
+  registrationpage.style.display = 'none';
+}
+var span2 = document.getElementsByClassName("close2")[0];
+span2.onclick = function() {
+  console.log('humayoun')
+  registrationpage.style.display = 'none';
+}
+  </script>
 </html>

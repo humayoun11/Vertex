@@ -2,16 +2,38 @@ var selectpage = document.getElementById('selectpage')
 var loginpage = document.getElementById('loginpage')
 var registrationpage = document.getElementById('registrationpage')
 var showuser = (document.getElementById('showusername').innerHTML = localUser)
+// Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
 
 function loginpageselect() {
+  console.log('humayoun')
   selectpage.style.display = 'none'
   loginpage.style.display = 'flex'
   registrationpage.style.display = 'none'
+  
 }
 function registrationpageselect() {
+  console.log('humayoun')
   selectpage.style.display = 'none'
   loginpage.style.display = 'none'
   registrationpage.style.display = 'flex'
+}
+// span.onclick = function() {
+//   console.log('humayoun')
+//   selectpage.style.display = 'flex';
+//   loginpage.style.display = "none";
+//   registrationpage.style.display = 'none';
+// }
+// function close() {
+//   console.log('humayoun')
+//   loginpage.style.display = "none";
+//   registrationpage.style.display = 'none';
+
+// }
+window.onclick = function(event) {
+  if (event.target == loginpage) {
+    loginpage.style.display = "none";
+  }
 }
 function registration() {
   var username = document.getElementById('RUser').value
