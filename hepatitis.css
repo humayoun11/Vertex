@@ -323,10 +323,12 @@ max-height: 300px;
       BUTTON THREE
 ========================
 */
-.btn-three a{
+.btn-three button{
     text-decoration: none;
     color: #FFF;
     font-family: poppins;
+    background: none;
+    border: none;
 }
 .btn-three {
     color: #FFF;

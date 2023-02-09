@@ -309,6 +309,7 @@
     padding-top: 100px;
     letter-spacing: 1px;
     font-size: 50px;
+    text-shadow: 5px 5px 10px black;
 }
 .buttons{
     text-align: center;
@@ -318,10 +319,12 @@
       BUTTON THREE
 ========================
 */
-.btn-three a{
+.btn-three button{
     text-decoration: none;
     color: #FFF;
     font-family: poppins;
+    background: none;
+    border: none;
 }
 .btn-three {
     color: #FFF;

@@ -445,10 +445,12 @@
       BUTTON THREE
 ========================
 */
-.btn-three a{
+.btn-three button{
     text-decoration: none;
     color: navy;
     font-family: poppins;
+    background: none;
+    border: none;
 }
 .btn-three {
     color: navy;

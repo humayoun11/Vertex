@@ -336,11 +336,13 @@
       BUTTON THREE
 ========================
 */
-.btn-three a{
+.btn-three button{
     text-decoration: none;
     color: #FFF;
     font-family: Poppins;
     letter-spacing: 1px;
+    background: none;
+    border: none;
 }
 .btn-three {
     color: #FFF;
