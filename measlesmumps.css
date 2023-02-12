@@ -154,7 +154,6 @@
         font-family: 'Fredoka One', cursive;
     }
     .infoAboutVirus{
-        height: 600px;
         position: relative;
         background-color: #ffffff;
         font-family: 'Fredoka One', cursive;
@@ -182,6 +181,18 @@
  .infoImage img{
     border-radius: 50%;
  }
+ .info h1{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.info h1 span{
+    color: #352e6e;
+}
+.info p{
+    font-family: poppins;
+}
+.info img{
+    border-radius: 50%;
+}
  .symptoms h1{
     font-family: 'Fredoka One', cursive;
     font-size: 40px;
