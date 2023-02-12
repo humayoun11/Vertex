@@ -287,11 +287,16 @@
     height: 80vh;
 }
 .p-cards h1{
-    font-family: 'fredoka one' ,cursive;
+    /* font-family: 'fredoka one' ,cursive;
     font-size: 30px;
     letter-spacing: 2px;
     font-size: 60px;
-   color: #000;
+   color: #000; */
+   font-family: 'Fredoka One', cursive;
+   font-size: 40px;
+   background: -webkit-linear-gradient(#f5e4e4,#352e6e);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
 .p-cards img{
   height: 200px;
@@ -300,11 +305,11 @@
 .card h4{
     font-family: 'fredoka one' ,cursive;
     font-weight: 700;
-   color: #000;
+   color: rgb(71, 71, 128);
     letter-spacing: 1px;
     position: relative;
 }
-.card h4::before{
+/* .card h4::before{
     content: '';
     position: absolute;
     left: 6px;
@@ -313,7 +318,7 @@
     height: 4px;
     background-color:blue;
 
-    }
+    } */
 .card p{
     font-family: poppins;
     color: #000;

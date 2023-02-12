@@ -214,11 +214,11 @@ align-items: center;
  .card h4{
     font-family: 'fredoka one' ,cursive;
     font-weight: 700;
-    color:black;
+    color:rgb(71, 71, 128) !important;
     letter-spacing: 1px;
     position: relative;
 }
-.card h4::before{
+/* .card h4::before{
     content: '';
     position: absolute;
     left: 6px;
@@ -227,7 +227,7 @@ align-items: center;
     height: 3px;
     background-color: blue;
 
-    }
+    } */
 .card p{
     font-family: poppins;
     color: black;
