@@ -8,6 +8,377 @@
     <link rel="stylesheet" href="measlesmumps.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+<<<<<<< Updated upstream
+=======
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,800;0,900;1,100&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nanum+Myeongjo:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 85px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(20, 20, 90);
+    opacity: 0.8;
+    
+}
+.vertex-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+    margin-top: -10px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+.vertex-logo h4{
+  font-family: sans-serif;
+  font-size: 30px;
+ padding-top: 13px;
+  margin-left: 5px;
+  font-family: 'Fredoka One', cursive;
+}
+/*.navlinks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}*/
+.navlinks{
+    opacity: none;
+}
+.navlinks ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    }
+.navlinks ul li{
+    list-style: none;
+    margin: 10px;
+    font-family: poppins;
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+.navlinks ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    border-radius: 4px;
+    scale: 0.1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+.navlinks ul li a:hover::before{
+    scale: 1;
+}
+.navlinks ul ul{
+    display: none;
+   
+}
+.dropdown-menu li{ 
+    font-family: poppins;
+  background-color: rgb(25, 25, 65);
+ border-radius: 10px;
+ font-size: small;
+ height: 30px;
+ padding: 7px;
+
+}
+.navlinks ul li:hover .dropdown-menu{
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    background-color:  rgb(20, 20, 90);
+}
+.login-signup{
+    padding-top: 2px;
+    margin-right: 20px;
+}
+.login-signup a button{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    background: none;
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+    font-size: 15px;
+}
+.login-signup a button:hover{
+    transition: 0.3s ease-in;
+    opacity: 0.8;
+    color: rgb(52, 192, 235);
+}
+.fa-brands{
+    padding-top: 4px;
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+}
+.fa-brands:hover{
+    transition: 0.3s ease-in;
+    color: grey;
+    cursor: pointer;
+} 
+/* navbar sec end */
+
+    .banner{
+        background-image: url(banner12.jpg);
+        height: 60vh;
+        background-image: cover;
+        background-position: center;
+        position: relative;
+        background-attachment: fixed;
+        
+    }
+    .child{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        font-family: 'Fredoka One', cursive;
+    }
+    .infoAboutVirus{
+        height: 100vh;
+        position: relative;
+        background-color: #ffffff;
+        font-family: 'Fredoka One', cursive;
+    }
+ .infoParent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center; 
+ }
+ .infoChild{
+    width: 600px;
+    justify-content: center;
+    text-align: justify;
+ }
+ .infoChild h3{
+    font-family: poppins, sans-serif;
+    font-size: 25px;
+ }
+ .infoChild p{
+    font-family: poppins;
+ }
+
+ .infoImage img{
+    border-radius: 50%;
+ }
+ .symptoms h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    background: -webkit-linear-gradient(#e2ebf3,#0872db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .card{
+    border: none;
+    background: rgb(174,223,238);
+background: radial-gradient(circle, rgba(174,223,238,1) 0%, rgba(220,223,228,1) 0%);
+box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+align-items: center;
+ }
+ .card img{
+    width: 150px;
+    height: 150px;
+ }
+ .card h4{
+    font-family: 'fredoka one' ,cursive;
+    font-weight: 700;
+    color:black;
+    letter-spacing: 1px;
+    position: relative;
+}
+/* .card h4::before{
+    content: '';
+    position: absolute;
+    left: 6px;
+    bottom: 0;
+    width: 63px;
+    height: 3px;
+    background-color: blue; */
+
+    }
+.card p{
+    font-family: poppins;
+    color: black;
+}
+.card h4{
+    font-family: 'fredoka one' ,cursive;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.8);
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.table-para h1{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.table-para h1 span{
+    color: #352e6e;
+}
+ #customers {
+    font-family: poppins;
+    border-collapse: collapse;
+    width: 100%;
+  }
+#customers tr th{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Fredoka One' ,cursive;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+  
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+#customers tr:hover {background-color: #ddd;}
+  
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #352e6e;
+    color: white;
+}
+.graph h1{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.graph h1 span{
+    color: #352e6e;
+}
+.graph img{
+    width: 100%;
+    height: 180vh;
+}
+.vaccine h1{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.vaccine h1 span{
+    color: #352e6e;
+}
+#m-vid-parents{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+   background-attachment: fixed;
+}
+#m-vid-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+#m-vid-parents h3{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Fredoka One' ,cursive;
+    padding-top: 60px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    text-shadow: 5px 5px 10px black;
+}
+.buttons{
+    text-align: center;
+}
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three button{
+    text-decoration: none;
+    color: #FFF;
+    font-family: poppins;
+    background: none;
+    border: none;
+}
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    width: 150px;
+}
+.btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+.btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+</style>
+>>>>>>> Stashed changes
 <body>
      <!-- navbar section start -->
      <!--main>
@@ -130,6 +501,7 @@ Mumps causes fever, headache, muscle aches, tiredness, loss of appetite, and swo
     <!-------------symptoms-------->
 <div class="symptoms">
     <h1 class="text-center">Symptoms</h1>
+    <br><br>
     <div class="container">
         <div class="row gy-3">
             <div class="col-md-3">
@@ -171,10 +543,11 @@ Mumps causes fever, headache, muscle aches, tiredness, loss of appetite, and swo
         </div>
     </div>
 </div>
-<br><br>
+<br><br><br><br>
 <!---------------preventions----------->
    <div class="symptoms">
     <h1 class="text-center">Preventions</h1>
+    <br><br>
     <div class="container">
         <div class="row gy-3">
             <div class="col-md-3">
@@ -217,7 +590,7 @@ Mumps causes fever, headache, muscle aches, tiredness, loss of appetite, and swo
     </div>
 </div>
 <br>
-<br>
+<br><br><br><br>
 <!-------------analytics table--------->
 <div class="table-para">
     <div class="container">
@@ -232,7 +605,7 @@ Mumps causes fever, headache, muscle aches, tiredness, loss of appetite, and swo
                 Measles outbreaks can result in epidemics that cause many deaths, especially among young,
                 malnourished children. In countries where measles has been largely eliminated, cases</p>
             </div>
-            <br>
+            
   <table id="customers">
     <tr>
       <th>Countries</th>
