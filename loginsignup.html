@@ -60,6 +60,101 @@
         <h4>Click below to make your account</h4>
       </div>
         <br>
+        <div class="login-wrapper" id="loginpage">
+          <form action="" class="form">
+            <span class="close">&times;</span>
+            <img src="avatar.png" alt="" />
+            <h2>Login</h2>
+            <div class="input-group">
+              <input type="text" name="loginUser" id="loginUser" required />
+              <label for="loginUser">User Name</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                name="loginPassword"
+                id="loginPassword"
+                required
+              />
+              <label for="loginPassword">Password</label>
+            </div>
+            <input
+              type="button"
+              class="submit-btn"
+              onclick="login()"
+              value="Login"
+            />
+            <!-- <button type="submit" class="submit-btn" onclick="login()">
+              Login
+            </button> -->
+            <!-- <input type="submit" value="Login" class="submit-btn" /> -->
+            <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
+          </form>
+    
+          <div id="forgot-pw">
+            <form action="" class="form">
+              <a href="#" class="close">&times;</a>
+              <h2>Reset Password</h2>
+              <div class="input-group">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Email</label>
+              </div>
+              <input type="submit" value="Submit" class="submit-btn" />
+            </form>
+          </div>
+        </div>
+        <div class="login-wrapper" id="registrationpage">
+          <form action="" class="form">
+            <span class="close close2">&times;</span>
+            <img src="avatar.png" alt="" />
+            <h2>Registration</h2>
+            <div class="input-group">
+              <input type="text" name="RUser" id="RUser" required />
+              <label for="RUser">User Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" name="REmail" id="REmail" required />
+              <label for="REmail">User Email</label>
+            </div>
+            <div class="input-group">
+              <input type="number" name="RNumber" id="RNumber" required />
+              <label for="RNumber">User Number</label>
+            </div>
+            <div class="input-group">
+              <input type="password" name="RPassword" id="RPassword" required />
+              <label for="loginPassword" required>Password</label>
+            </div>
+            <input
+              type="button"
+              class="submit-btn"
+              onclick="registration()"
+              value="registration"
+            />
+            
+            <!-- <button onclick="registration()" class="submit-btn">
+              Registration
+            </button> -->
+            <!-- <input
+              onclick="registration()"
+              type="submit"
+              value="Sign Up"
+              class="submit-btn"
+            /> -->
+            <!-- <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a> -->
+          </form>
+    
+          <div id="forgot-pw">
+            <form action="" class="form">
+              <a href="#" class="close">&times;</a>
+              <h2>Reset Password</h2>
+              <div class="input-group">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Email</label>
+              </div>
+              <input type="submit" value="Submit" class="submit-btn" />
+            </form>
+          </div>
+        </div>
         <div class="buttons">
           <!-- <div class="btn btn-three">
             <a href="">
@@ -69,12 +164,13 @@
         <!-- <div class="btn btn-three">
         <button onclick="registrationpageselect()">REGISTRATION</button>
       </div> -->
-      <button class="btn btn-three" onclick="loginpageselect()">
+      <button class="btn btn-three " onclick="loginpageselect()">
         LOGIN
       </button>
       <button class="btn btn-three" onclick="registrationpageselect()">
         REGISTRATION
       </button>
+      
         </div>
         <br>
 
@@ -87,7 +183,7 @@
           REGISTRATION
         </button>
       </div>
-      <div class="login-wrapper" id="loginpage">
+      <!-- <div class="login-wrapper" id="loginpage">
         <form action="" class="form">
           <span class="close">&times;</span>
           <img src="avatar.png" alt="" />
@@ -115,7 +211,7 @@
             Login
           </button> -->
           <!-- <input type="submit" value="Login" class="submit-btn" /> -->
-          <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
+          <!-- <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
         </form>
   
         <div id="forgot-pw">
@@ -170,7 +266,7 @@
           <!-- <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a> -->
         </form>
   
-        <div id="forgot-pw">
+        <!-- <div id="forgot-pw">
           <form action="" class="form">
             <a href="#" class="close">&times;</a>
             <h2>Reset Password</h2>
@@ -181,7 +277,7 @@
             <input type="submit" value="Submit" class="submit-btn" />
           </form>
         </div>
-      </div>
+      </div> -->
    
   </body>
   <script src="loginregister.js"></script>
