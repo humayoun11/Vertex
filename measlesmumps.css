@@ -311,6 +311,9 @@ align-items: center;
       BUTTON THREE
 ========================
 */
+.color{
+    color: #FFF !important;
+}
 .btn-three button{
     text-decoration: none;
     color: #FFF;
@@ -319,7 +322,7 @@ align-items: center;
     border: none;
 }
 .btn-three {
-    color: #FFF;
+    color: #FFF !important;
     transition: all 0.5s;
     position: relative;
     width: 150px;
