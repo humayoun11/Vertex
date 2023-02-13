@@ -459,12 +459,14 @@ font-size: 13px;
 color:gray;
 }
 .card-body a{
-    background:  rgb(109, 236, 119);
     color: white;
     border: none;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
 }
 .card-body a:hover{
-    background: none;
+    background: transparent;
    color: white;
    border: 1px solid white;
    box-shadow: 7px 7px 7px black;
