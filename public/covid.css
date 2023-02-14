@@ -421,7 +421,7 @@
     border: none;
 }
 .btn-three {
-    color: #FFF;
+    color: #FFF !important;
     transition: all 0.5s;
     position: relative;
     width: 150px;
