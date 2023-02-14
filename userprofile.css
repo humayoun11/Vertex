@@ -1,0 +1,19 @@
+.userimage{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+.lable{
+    color: white !important;
+}
+.input{
+    border: none !important;
+    background: none !important;
+    color: white !important;
+}
+.color{
+    color: white !important;
+}
+.image{
+    height: 250px !important;
+}

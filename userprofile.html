@@ -7,6 +7,7 @@
     <link rel="website icon" type="png"
      href="animationimge.png">
     <!-- Start Bootstrap Carousel HEAD section -->
+    <link rel="stylesheet" href="userprofile.css">
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
 <script type="text/javascript" src="engine1/jquery.js"></script>
 <!-- End Bootstrap Carousel HEAD section -->
@@ -23,7 +24,7 @@
 <body>
     <!------------------------------navbar------------------------------------>
     <main>
-        <div class="row">
+        <div class="row image">
           <div class="col-md-12 col-sm-12 col-lg-12">
               <div class="navbar">
                   <div class="vertex-logo">
@@ -60,12 +61,44 @@
                   </div>
               </div>
           </div>
+          <div class="col-md-12 col-sm-12 col-lg-12">
+            <img class="userimage" src="avatar.png" alt="">
+            <!-- <label class="lable" for="">User Name:</label> -->
+            <h6 class="color" id="userdetailname"></h6>
+            <!-- <input class="input" id="userdetailname" type="text"> -->
+            <br>
+            <br>
+            <label class="lable" for="">Email</label>
+            <h6 class="color" id="userdetailemail"></h6><br>
+            <br>
+            <label class="lable" for="">Phone Number</label>
+            <h6 class="color" id="userdetailnumber"></h6><br>
+            <br>
+            <label class="lable" for="">Education</label>
+            <h6 class="color" id="userdetaileducation"></h6><br>
+            <br>
+            
+        </div>
+       
+            
+
+        </div>
+          
       </div>
       
 
 <script>
   document.getElementById('showusername').innerHTML =
     localStorage.localUsername;
+    document.getElementById('userdetailname').innerHTML =
+    localStorage.localUsername;
+    document.getElementById('userdetailemail').innerHTML =
+    localStorage.localUserEmail;
+    document.getElementById('userdetailnumber').innerHTML =
+    localStorage.localUsernumber;
+    document.getElementById('userdetaileducation').innerHTML =
+    localStorage.localUsereducation;
+    
 </script>
 <!-- <script>alert('login successfully '+ localStorage.localUsername)</script> -->
 <script src="loginregister.js"></script>
