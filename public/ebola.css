@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+.navbar{
+    height: 85px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background: rgb(20, 20, 90);
+    opacity: 0.8;
+    
+}
+.vertex-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+    margin-top: -10px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+.vertex-logo h4{
+  font-family: sans-serif;
+  font-size: 30px;
+ padding-top: 13px;
+  margin-left: 5px;
+  font-family: 'Fredoka One', cursive;
+}
+/*.navlinks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}*/
+.navlinks{
+    opacity: none;
+}
+.navlinks ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    }
+.navlinks ul li{
+    list-style: none;
+    margin: 10px;
+    font-family: poppins;
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+.navlinks ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    border-radius: 4px;
+    scale: 0.1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+.navlinks ul li a:hover::before{
+    scale: 1;
+}
+.navlinks ul ul{
+    display: none;  
+}
+.dropdown-menu li{ 
+    font-family: poppins;
+  color: #050e5c;
+ border-radius: 10px;
+ font-size: small;
+ height: 30px;
+ padding: 7px;
+
+}
+.navlinks ul li:hover .dropdown-menu{
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    background-color:  rgb(20, 20, 90);
+}
+.login-signup{
+    padding-top: 2px;
+    margin-right: 20px;
+}
+.login-signup a button{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    background: none;
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+    font-size: 15px;
+}
+.login-signup a button:hover{
+    transition: 0.3s ease-in;
+    opacity: 0.8;
+    color: rgb(52, 192, 235);
+}
+.fa-brands{
+    padding-top: 4px;
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+}
+.fa-brands:hover{
+    transition: 0.3s ease-in;
+    color: grey;
+    cursor: pointer;
+} 
+/* navbar sec end */
+
+/*------------------------------------ebola banner---------------------------*/
+.ebola-banner{
+    background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)),url(ebola\ pic\ banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    background-attachment: fixed;
+}
+/*banner text*/
+.banner-text h1{
+    font-family: 'Fredoka One' ,cursive;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: rgb(210, 210, 226);
+    font-size: 100px;
+    text-shadow: 7px 7px 10px black;
+}
+.banner-text{
+    text-align: center;
+    justify-content: center;
+}
+.banner-text img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+}
+.banner-text-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #FFF;
+    font-family: 'fredoka one' ,cursive;
+    text-shadow: 7px 7px 10px black;
+}
+
+/* intro sec  */
+.intro h6{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(68, 68, 143);
+    font-family: raleway;
+}
+.intro h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: rgb(19, 19, 46);
+    font-family: raleway;
+}
+.virus-img1 img{
+    width: 400px;
+    height: 400px;
+    margin-left: 90px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 7px #000;
+}
+.virus-img2 img{
+    width: 775px;
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 7px #000;
+}
+.parent-intro2{
+    display: flex;
+}
+.intro-para p{
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+    font-size: 20px;
+    color: gray;
+    line-height: 35px;
+    font-family: raleway;
+}
+/* nxt sec */
+.virus-img img{
+    border-radius: 900px;
+    width: 500px;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 500px;
+    height: 500px;
+}
+.section1{
+    display: flex;
+}
+.section-para1 h4{
+    font-family: raleway;
+    color: rgb(68, 68, 143);
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.section-para1 h1{
+    font-family: raleway;
+    font-size: 40px;
+    color: rgb(19, 19, 46);
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.section-para1 p{
+    font-size: 20px;
+    color: gray;
+    line-height: 35px;
+    margin-left: 40px;
+    margin-right: 50px;
+    font-family: raleway;
+}
+/*---------------------------slider-------------------------*/
+.carousel-item img{
+    animation-duration: 2s;
+}
+.heading{
+    text-align: center;
+    font-family: raleway;
+    font-size: 30px;
+    color: rgb(19, 19, 46);
+}
+.heading img{
+    width: 150px;
+    margin-top: 10px;
+    height: 150px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+}
+.symptom-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+#card-1{
+    justify-content: space-evenly;
+    text-align: center;
+}
+#card-1 img{
+    width: 300px;
+    height: 350px;
+    margin: 13px;
+}
+#card-1 h2{
+    font-size: 13px;
+    font-family: 'Fredoka One' ,cursive;
+}
+/*-------------------------preventions and symptoms------------------*/
+.p-cards{
+    width: 100%;
+    height: 80vh;
+}
+.p-cards h1{
+    /* font-family: 'fredoka one' ,cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-size: 60px;
+   color: #000; */
+   font-family: 'Fredoka One', cursive;
+   font-size: 40px;
+   background: -webkit-linear-gradient(#f5e4e4,#352e6e);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.p-cards img{
+  height: 200px;
+  width: 200px;
+}
+.card h4{
+    font-family: 'fredoka one' ,cursive;
+    font-weight: 700;
+   color: rgb(71, 71, 128);
+    letter-spacing: 1px;
+    position: relative;
+}
+/* .card h4::before{
+    content: '';
+    position: absolute;
+    left: 6px;
+    bottom: -6;
+    width: 63px;
+    height: 4px;
+    background-color:blue;
+
+    } */
+.card p{
+    font-family: poppins;
+    color: #000;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+/*---------------------------------vaccination-----------------------*/
+.vaccination{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+#measles-vaccines{
+    font-family: poppins;
+    text-align: center;
+    justify-content: center;
+  }
+.vaccination-imgs img{
+    width: 250px;
+    height: 250px;
+    border-radius: 130px;
+    margin: 10px;
+  }
+.vaccination p{
+    color: gray;
+    font-family: poppins;
+    font-weight: 600;
+  }
+  
+   /*---------------------------measles graph------------------------*/
+.ebola-gragh img{
+ 
+   /* background-image:
+    url(ebolagraph.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   align-items: center;
+   justify-content: center;*/
+   width: 100%;
+   height: 100vh;
+  }
+
+  /*------------------------------ebola video table--------------------*/
+#ebola-vid-parents{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+   background-attachment: fixed;
+}
+#ebola-vid-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#customers {
+    font-family: poppins;
+    border-collapse: collapse;
+    width: 100%;
+    color: #FFF;
+    margin-top: 15px;
+  }
+#customers tr th{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Fredoka One' ,cursive;
+    font-weight: 300;
+    letter-spacing: 1px;
+   
+  }
+  
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+#customers tr:nth-child(even){background-color: transparent;}
+  
+#customers tr:hover {background-color: transparent;}
+  
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+  }
+.table-text{
+    display: flex;
+    width: 100%;
+    height: 630px;
+    background-color: #e7eaf3;
+    color: black;
+}
+.table-text img{
+    width: 750px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.table-p{
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'fredoka One' ,cursive;
+}
+.table-p p{
+    line-height: 30px;
+    font-family: poppins;
+}
+/*buttons*/
+.buttons{
+    text-align: center;
+}
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three button{
+    text-decoration: none;
+    color: navy;
+    font-family: poppins;
+    background: none;
+    border: none;
+}
+.btn-three {
+    color: navy;
+    transition: all 0.5s;
+    position: relative;
+    width: 150px;
+}
+.btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(24, 22, 22, 0.30);
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+.btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid  rgba(24, 22, 22, 0.30);
+    transform: scale(1.2,1.2);
+    border-radius: 20px;
+}
+.btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+/*-------------------------------footer----------------------*/
+.footer-section{
+    background-color: #0d524b;
+    background-image: linear-gradient(160deg, #0d524b 0%, #050e5c 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    background-attachment: fixed;
+}
+.footer{
+    display: flex;
+}
+.vertex-logo-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo-footer img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 20px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+  .vertex-logo-footer h4{
+    font-size: 30px;
+padding-top: 40px;
+    margin-left: 5px;
+    font-family: 'Fredoka One', cursive;
+  }
+  .footer-paragraph p{
+    color: white;
+    font-family: poppins;
+    margin: 15px;
+    font-size: 15px;
+  }
+  .footer-paragraph h5{
+    font-family: poppins;
+    color: white;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  
+  
+  .footer-paragraph .fa-brands {
+    /* padding-top: 4px;
+    color: gray;
+    margin: 5px;
+    font-size: 20px;
+    margin: 10px; */
+
+    height: 40px;
+    width: 40px;
+    background-color: rgb(53, 53, 243);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    transition: .4s;
+    /* margin-left: 20px; */
+}
+/* .footer-paragraph .fa-brands a:hover{ */
+    /* transition: 0.3s ease-in;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 23px; */
+
+    /* transform: scale(1.2);
+    color: black;
+    background-color: white; */
+   
+ 
+.fa-brands:hover{
+    color: black !important;
+    background-color: white !important;
+    transform: scale(1.2);
+}
+.footer2{
+    display: flex;
+    color: #FFF;
+    justify-content: space-evenly;
+}
+.footer2 ul li{
+    list-style: none;
+    line-height: 40px;
+    font-size: 15px !important;
+    font-family: poppins;
+}
+.footer2 ul li:hover{
+cursor: pointer;
+font-weight: 700;
+text-decoration: underline;
+font-size: 15px !important;
+
+}
+.footer2 ul h3{
+    font-family: 'fredoka One', cursive;
+    font-size: 18px;
+    color: greenyellow;
+    letter-spacing: 1px;
+}
+.footer2 ul h4{
+    font-family: raleway;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 650;
+}
+.copyright{
+    text-align: center;
+    justify-content: center;
+    color: gainsboro;
+    font-family: poppins;
+    opacity: 0.4;
+}
+.copyright h5{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* media qquery */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner-text{
+        justify-content: center;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        /* padding-top: 20px; */
+    }
+    .banner-text h1{
+        font-size: 5px;
+        
+    }
+    .banner-text img{
+        animation: mymove 80s infinite;
+        height: 80px;
+        width: 80px;
+    }
+    @keyframes mymove {
+        50% {transform: rotate(480deg);}
+    }
+    .banner-text-flex{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+
+}

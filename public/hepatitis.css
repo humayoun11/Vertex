@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,800;0,900;1,100&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 85px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background: rgb(20, 20, 90);
+    opacity: 0.8;
+    
+}
+.vertex-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+    margin-top: -10px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+.vertex-logo h4{
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-top: 13px;
+  margin-left: 5px;
+  font-family: 'Fredoka One', cursive;
+}
+/*.navlinks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}*/
+.navlinks{
+    opacity: none;
+}
+.navlinks ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    }
+.navlinks ul li{
+    list-style: none;
+    margin: 10px;
+    font-family: poppins;
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+.navlinks ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    border-radius: 4px;
+    scale: 0.1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+.navlinks ul li a:hover::before{
+    scale: 1;
+}
+
+.navlinks ul ul{
+    display: none;
+}
+.dropdown-menu li{ 
+    font-family: poppins;
+  background-color: rgb(25, 25, 65);
+ border-radius: 10px;
+ font-size: small;
+ height: 30px;
+ padding: 7px;
+
+}
+.navlinks ul li:hover .dropdown-menu{
+    display: block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    background-color:  rgb(20, 20, 90);
+}
+.login-signup{
+    padding-top: 2px;
+    margin-right: 20px;
+}
+.login-signup a button{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    background: none;
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+    font-size: 15px;
+}
+.login-signup a button:hover{
+    transition: 0.3s ease-in;
+    opacity: 0.8;
+    color: rgb(52, 192, 235);
+}
+.fa-brands{
+    padding-top: 4px;
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+}
+.fa-brands:hover{
+    transition: 0.3s ease-in;
+    color: grey;
+    cursor: pointer;
+} 
+
+/* navbar sec end */
+/*-----------------------------------banner------------------------*/
+.hepatits-banner{
+    background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)),url(Viral-Hepatitis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    background-attachment: fixed;
+}
+/*banner text*/
+.banner-text h1{
+    font-family: 'Fredoka One' ,cursive;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: rgb(210, 210, 226);
+    font-size: 100px;
+    text-shadow: 7px 7px 10px black;
+}
+.banner-text{
+    text-align: center;
+    justify-content: center;
+}
+.banner-text img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+}
+.banner-text-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #FFF;
+    font-family: 'fredoka one' ,cursive;
+    text-shadow: 7px 7px 10px black;
+}
+
+
+/*-------------------------------------------intro------------------------------------------*/
+.hep-sec{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    height: 480px;
+    text-align: justify;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+}
+.hep-sec h4{
+    font-family: raleway;
+   /*margin-top: 40px;*/
+   font-size: 15px;
+   text-align: center;
+   color: rgb(229, 132, 132);
+}
+.hep-sec h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.hep-sec p{
+    font-size: 18px;
+    color: white;
+    line-height: 35px;
+    font-family: raleway;
+}
+/*-------------------------types----------------------*/
+/* .types-heading{
+    width: 100%;
+    height: 110vh;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+    text-align: center;
+    justify-content: center;
+}
+.types-heading h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.types-heading p{
+    font-size: 18px;
+    color: white;
+    font-family: raleway;
+    margin: 20px;
+}
+.hep-types{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+/* .types-content{
+    width: 300px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px black;
+   
+}
+.types-content img{
+    height: 150px;
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.types-content h4{
+    color: #FFF;
+    font-family: 'fredoka one' ,cursive;
+    padding-top: 7px;
+}
+.types-content p{
+    font-family: poppins;
+} */
+
+.parent{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+}
+.types-heading h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    justify-self: unset;
+    text-align: center;
+}
+.types-heading p{
+    font-size: 18px;
+    color: white;
+    font-family: raleway;
+    text-align: center;
+}
+/*
+.types-content{
+    max-width: 300px;
+    background-color: black;
+    color: white;
+    font-family: poppins;
+    font-size: 13px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px black;
+}
+.types-content:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.types-content img{
+max-width: 250px;
+max-height: 300px;
+}*/
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three button{
+    text-decoration: none;
+    color: #FFF;
+    font-family: poppins;
+    background: none;
+    border: none;
+}
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    width: 150px;
+}
+.btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+.btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+/*-------------------------------symptoms-----------------------*/
+.heading{
+    text-align: center;
+    font-family: raleway;
+    font-size: 30px;
+    width: 100%;
+    padding: 20px;
+    height: 450px;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heading h1{
+    font-family: 'fredoka one',cursive;
+    color: greenyellow;
+}
+.symptom-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+}
+#card-1 img{
+    width: 150px;
+    height: 150px;
+}
+#card-1 h2{
+    font-size: 13px;
+    font-family: 'Fredoka One' ,cursive;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/*--------------------hep-a-----------------------*/
+.hepatitis-a-img img{
+    max-width: 400px;
+    max-height: 400px;
+   
+}
+#hep-a-sec{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(24, 22, 22, 0.8)),url(Viral-Hepatitis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+    text-align: justify;
+    background-attachment: fixed;
+}
+/* .hep-a-para1 {
+    margin: 20px;
+} */
+.hep-a-para1 h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    /* text-align: justify;
+    justify-content: center; */
+    letter-spacing: 2px;
+}
+.hep-a-para1 p{
+    font-size: 18px;
+    color: white;
+    line-height: 35px;
+    text-align: justify;
+    justify-content: center;
+    font-family: raleway;
+    max-width: 600px;
+}
+.hep-a-para1 h5{
+    color: #FFF;
+    font-family: poppins;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.hep-a-para1 h6{
+    color: #FFF;
+    font-family: poppins;
+    font-size: 15px;
+}
+.fa-solid{
+    color: greenyellow;
+    font-size: 20px;
+    /* margin-right: 7px; */
+}
+
+
+.stats-h1{
+    text-align: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Fredoka One' ,cursive;
+}
+#customers {
+    font-family: poppins;
+    border-collapse: collapse;
+    width: 100%;
+    color: #FFF;
+    height: 100vh;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+#customers tr th{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Fredoka One' ,cursive;
+    font-weight: 300;
+    letter-spacing: 1px;
+   
+  }
+  
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+#customers tr:nth-child(even){background-color: transparent;}
+  
+#customers tr:hover {background-color: transparent;}
+  
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+  }
+  .hep-graph{
+    width: 100%;
+    height: 100vh;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+  }
+  .hep-graph h1{
+    text-align: center;
+    justify-content: center;
+    color: greenyellow;
+    font-family: 'Fredoka One' ,cursive;
+    padding: 7px;
+    letter-spacing: 1px;
+  }
+  .hep-graph img{
+    width: 100%;
+    height: 550px;
+  }
+/*----------------------video banner----------------------*/
+  #hep-vid-parents{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+   background-attachment: fixed;
+}
+#hep-vid-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+#hep-vid-parents h3{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Fredoka One' ,cursive;
+    padding-top: 100px;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+#hep-vid-parents h4{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Fredoka One' ,cursive;
+    padding-top: 70px;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+.buttons{
+    text-align: center;
+}
+/*--------------------------prevention---------------------------------*/
+.p-cards{
+    width: 100%;
+    height: 80vh;
+    background: rgb(83,100,213);
+    background: linear-gradient(90deg, rgba(83,100,213,0.8071603641456583) 0%, rgba(5,25,57,1) 100%);
+}
+.p-cards h1{
+    font-family: 'fredoka one' ,cursive;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 60px;
+    background: -webkit-linear-gradient(#F0F8FF,#318CE7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p-cards img{
+  height: 200px;
+  width: 200px;
+}
+.card h4{
+    font-family: 'fredoka one' ,cursive;
+    font-weight: 700;
+    color: greenyellow;
+    letter-spacing: 1px;
+    position: relative;
+}
+.card h4::before{
+    content: '';
+    position: absolute;
+    left: 6px;
+    bottom: -6;
+    width: 63px;
+    height: 4px;
+    background-color: greenyellow;
+
+    }
+.card p{
+    font-family: poppins;
+    color: white;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+/*-------------------------------footer----------------------*/
+/*-------------------------------footer----------------------*/
+.footer-section{
+    background-color: #0d524b;
+    background-image: linear-gradient(160deg, #0d524b 0%, #050e5c 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    background-attachment: fixed;
+}
+.footer{
+    display: flex;
+}
+.vertex-logo-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertex-logo-footer img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 20px;
+    animation: mymove 80s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(480deg);}
+  }
+  .vertex-logo-footer h4{
+    font-size: 30px;
+padding-top: 40px;
+    margin-left: 5px;
+    font-family: 'Fredoka One', cursive;
+  }
+  .footer-paragraph p{
+    color: white;
+    font-family: poppins;
+    margin: 15px;
+    font-size: 15px;
+  }
+  .footer-paragraph h5{
+    font-family: poppins;
+    color: white;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  
+  
+  .footer-paragraph .fa-brands {
+    /* padding-top: 4px;
+    color: gray;
+    margin: 5px;
+    font-size: 20px;
+    margin: 10px; */
+
+    height: 40px;
+    width: 40px;
+    background-color: rgb(53, 53, 243);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    transition: .4s;
+    /* margin-left: 20px; */
+}
+/* .footer-paragraph .fa-brands a:hover{ */
+    /* transition: 0.3s ease-in;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 23px; */
+
+    /* transform: scale(1.2);
+    color: black;
+    background-color: white; */
+   
+ 
+.fa-brands:hover{
+    color: black !important;
+    background-color: white !important;
+    transform: scale(1.2);
+}
+.footer2{
+    display: flex;
+    color: #FFF;
+    justify-content: space-evenly;
+}
+.footer2 ul li{
+    list-style: none;
+    line-height: 40px;
+    font-size: 15px !important;
+    font-family: poppins;
+}
+.footer2 ul li:hover{
+cursor: pointer;
+font-weight: 700;
+text-decoration: underline;
+font-size: 15px !important;
+
+}
+.footer2 ul h3{
+    font-family: 'fredoka One', cursive;
+    font-size: 18px;
+    color: greenyellow;
+    letter-spacing: 1px;
+}
+.footer2 ul h4{
+    font-family: raleway;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 650;
+}
+.copyright{
+    text-align: center;
+    justify-content: center;
+    color: gainsboro;
+    font-family: poppins;
+    opacity: 0.4;
+}
+.copyright h5{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* media qquery */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner-text{
+        justify-content: center;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        /* padding-top: 20px; */
+    }
+    .banner-text h1{
+        font-size: 5px;
+        
+    }
+    .banner-text img{
+        animation: mymove 80s infinite;
+        height: 80px;
+        width: 80px;
+    }
+    @keyframes mymove {
+        50% {transform: rotate(480deg);}
+    }
+    .banner-text-flex{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+
+}
