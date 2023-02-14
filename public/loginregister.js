@@ -62,11 +62,11 @@ function login() {
   var password = document.getElementById('loginPassword').value
   var showuser = document.getElementById('showusername')
 
-  var localUser = localStorage.getItem('notapprovedUsername')
-  var localPass = localStorage.getItem('notapprovedUserPassword')
+  // var approveduser = localStorage.getItem('notapprovedUsername')
+  // var approvedUserPassword = localStorage.getItem('notapprovedUserPassword')
 
-  var notapproveduser = localStorage.getItem('notapprovedUsername')
-  var notapproveduser = localStorage.getItem('notapprovedUserPassword')
+  var notapprovedusername = localStorage.getItem('notapprovedUsername')
+  var notapprovedUserPassword = localStorage.getItem('notapprovedUserPassword')
 
   if (user == localUser && password == localPass) {
     alert('login successfully ' + localStorage.localUsername)
@@ -74,7 +74,7 @@ function login() {
   }
 
   //   document.getElementById('showusername').innerHTML = localUser
-  if (user == notapproveduser && password == notapproveduser) {
+  if (user == notapprovedusername && password == notapprovedUserPassword) {
     alert(
       'Dear ' +
         localStorage.notapprovedUsername +
