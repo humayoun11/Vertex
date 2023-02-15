@@ -85,19 +85,32 @@
           <th>User Name</th>
           <th>User Email</th>
           <th>Phone Number</th>
-          <th>Approved or not</th>
-          <th>Detail</th>
+          
         </tr>
-        <tr>
-          <td>Row2 cell1</td>
-          <td>Row2 cell2</td>
-        </tr>
+        
         
       </table>
     </div>
-    <div>
-      <button onclick="myFunction()">add</button>
-    </div>
+    <!-- <div>
+      <button onclick="add_text_input()">add</button>
+    </div> -->
+    <!-- <button class="btn btn-three" onclick="add_text_input()">
+      REGISTRATION
+    </button> -->
+    <!-- <form>
+      <table id="mytable">
+          <tr>
+              <td> User Name </td>
+              <td> User Email </td>
+              <td> Phone Number </td>
+              <td> Approved or not </td>
+              <td> Detail </td>
+          </tr>
+      </table>
+  
+      <input type="button" onclick="add_text_input()" value="add row">
+      <input type="button" onclick="save_data()" value="save">
+  </form> -->
 
 
     <script>
@@ -115,23 +128,26 @@
     
   </body>
   <script>
+
+
     var username = localStorage.localuser
-    function myFunction() {
-      var username = localStorage.localUsername
-      var useremail = localStorage.localUserEmail
-      var usernumber = localStorage.localUsernumber
-      var usereapproved = localStorage.localUserEmail
-      var table = document.getElementById("myTable");
-      var row = table.insertRow(1);
-      var cell1 = row.insertCell(0);
-      var cell2 = row.insertCell(1);
-      var cell3 = row.insertCell(2);
-      var cell4 = row.insertCell(3);
-      var cell5 = row.insertCell(4);
-      cell1.innerHTML = username;
-      cell2.innerHTML = useremail;
-      cell3.innerHTML = usernumber;
-      cell4.innerHTML = "Not";
-    }
+    // function myFunction() {
+    //   var username = localStorage.localUsername
+    //   var useremail = localStorage.localUserEmail
+    //   var usernumber = localStorage.localUsernumber
+    //   var usereapproved = localStorage.localUserEmail
+    //   var table = document.getElementById("myTable");
+    //   var row = table.insertRow(1);
+    //   var cell1 = row.insertCell(0);
+    //   var cell2 = row.insertCell(1);
+    //   var cell3 = row.insertCell(2);
+    //   var cell4 = row.insertCell(3);
+    //   var cell5 = row.insertCell(4);
+    //   cell1.innerHTML = username;
+    //   cell2.innerHTML = useremail;
+    //   cell3.innerHTML = usernumber;
+    //   cell4.innerHTML = "Not";
+    // }
     </script>
+    <script src="public/loginregister.js"></script>
 </html>

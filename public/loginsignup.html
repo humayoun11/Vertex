@@ -152,6 +152,7 @@
       </button>
       
       
+      
         </div><div class="login-wrapper" id="loginpage">
           <form action="" class="form">
             <span class="close">&times;</span>
@@ -196,7 +197,7 @@
           </div>
         </div>
         <div class="login-wrapper" id="registrationpage">
-          <form action="" class="form">
+          <form role="form" onsubmit="signUp(event);" autocomplete="off" action="" class="form">
             <span class="close">&times;</span>
             <img src="avatar.png" alt="" />
             <h2>Login</h2>
@@ -219,7 +220,7 @@
             <input
               type="button"
               class="submit-btn"
-              onclick="registration()"
+              onclick=" registration()"
               value="registration"
             />
             <!-- <button onclick="registration()" class="submit-btn">
