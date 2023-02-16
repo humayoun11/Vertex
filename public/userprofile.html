@@ -89,15 +89,24 @@
 
 <script>
   document.getElementById('showusername').innerHTML =
-    localStorage.localUsername;
-    document.getElementById('userdetailname').innerHTML =
-    localStorage.localUsername;
-    document.getElementById('userdetailemail').innerHTML =
-    localStorage.localUserEmail;
+  localStorage.localUsername;
+  document.getElementById('userdetailname').innerHTML =
+  localStorage.localUsername;
+
+
+
+var detail =  JSON.parse(localStorage.getItem('formData'))
+var inventory =detail
+
+ var result = inventory.find(( name) => name.username == localStorage.localUsername);
+
+console.log(result.number)
+
+document.getElementById('userdetailemail').innerHTML = result.email;
     document.getElementById('userdetailnumber').innerHTML =
-    localStorage.localUsernumber;
-    document.getElementById('userdetaileducation').innerHTML =
-    localStorage.localUsereducation;
+    result.number;
+    // document.getElementById('userdetaileducation').innerHTML =
+    // localStorage.localUsereducation;
     
 </script>
 <!-- <script>alert('login successfully '+ localStorage.localUsername)</script> -->

@@ -2,10 +2,6 @@ var selectpage = document.getElementById('selectpage')
 var loginpage = document.getElementById('loginpage')
 var registrationpage = document.getElementById('registrationpage')
 var showuser = (document.getElementById('showusername').innerHTML = localUser)
-var adminuser = 'admin'
-var adminpassword = 'admin123'
-// Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
 
 function loginpageselect() {
   console.log('humayoun')
@@ -19,29 +15,13 @@ function registrationpageselect() {
   loginpage.style.display = 'none'
   registrationpage.style.display = 'flex'
 }
-// span.onclick = function() {
-//   console.log('humayoun')
-//   selectpage.style.display = 'flex';
-//   loginpage.style.display = "none";
-//   registrationpage.style.display = 'none';
-// }
-// function close() {
-//   console.log('humayoun')
-//   loginpage.style.display = "none";
-//   registrationpage.style.display = 'none';
 
-// }
 window.onclick = function (event) {
   if (event.target == loginpage) {
     loginpage.style.display = 'none'
   }
 }
 
-// function registrationaddsave() {
-//   registration()
-//   add_text_input()
-//   savedata()
-// }
 function registration() {
   let username = document.getElementById('RUser').value,
     email = document.getElementById('REmail').value,
@@ -54,9 +34,11 @@ function registration() {
     formData.length &&
     JSON.parse(localStorage.getItem('formData')).some(
       (data) =>
+      data.id &&
         data.username.toLowerCase() == username.toLowerCase() &&
         data.email.toLowerCase() == email.toLowerCase() &&
-        data.number.toLowerCase() == number.toLowerCase(),
+        data.number.toLowerCase() == number.toLowerCase() &&
+        data.password.toLowerCase() == password.toLowerCase(),
     )
 
   if (!exist) {
@@ -71,48 +53,44 @@ function registration() {
     alert('Ooopppssss... Duplicate found!!!\nYou have already sigjned up')
   }
   e.preventDefault()
-  
 }
 
 function login() {
   var adminuser = 'admin'
   var adminpassword = 'admin123'
   var showuser = document.getElementById('showusername')
-  var user = document.getElementById('loginUser').value
-  var password = document.getElementById('loginPassword').value
-  var showuser = document.getElementById('showusername')
-
-  // var approveduser = localStorage.getItem('notapprovedUsername')
-  // var approvedUserPassword = localStorage.getItem('notapprovedUserPassword')
-
-  var notapprovedusername = localStorage.getItem('notapprovedUsername')
-  var notapprovedUserPassword = localStorage.getItem('notapprovedUserPassword')
-
-  // if (user == localUser && password == localPass) {
-  //   alert('login successfully ' + localStorage.localUsername)
-  //   ;(window.location.href = 'userhome.html'), (showuser.innerHTML = localUser)
-  // }
-
-  //   document.getElementById('showusername').innerHTML = localUser
-  if (user == notapprovedusername && password == notapprovedUserPassword) {
-    alert(
-      'Dear ' +
-        localStorage.notapprovedUsername +
-        ' your account under approval please wait admin will approved your account with in 24 hours',
+  let username = document.getElementById('loginUser').value,
+    password = document.getElementById('loginPassword').value
+  let formData = JSON.parse(localStorage.getItem('formData')) || []
+  localStorage.setItem('localUsername', username)
+  let exist =
+    formData.length &&
+    JSON.parse(localStorage.getItem('formData')).some(
+      (data) =>
+        data.username.toLowerCase() == username ||
+        (adminuser == username && data.password.toLowerCase() == password) ||
+        adminpassword == password,
     )
-    showuser.innerHTML = localUser
-  }
 
-  // if (user == localUser && password == localPass) {
-  //   alert('login successfully ' + localStorage.localUsername)
-  //   ;(window.location.href = 'userhome.html'), (showuser.innerHTML = localUser)
-  // }
-  if (user == adminuser && password == adminpassword) {
+  if (
+    formData.length &&
+    JSON.parse(localStorage.getItem('formData')).some(
+      (data) =>
+        data.username.toLowerCase() == username &&
+        data.password.toLowerCase() == password,
+    )
+  ) {
+    alert('login successfully ' + localStorage.localUsername)
+    ;(window.location.href = 'userhome.html'), (showuser.innerHTML = localUser)
+  }
+  if (username == adminuser && password == adminpassword) {
     alert(' Wellcome Admin ')
     ;(window.location.href = 'adminhome.html'), (showuser.innerHTML = adminuser)
-  } else {
-    alert('kindly pleasee correct your credentials')
   }
+  if (!exist) {
+    alert('incorrect username or password')
+  }
+  e.preventDefault()
 }
 function add_text_input() {
   var table = document.getElementById('mytable')
