@@ -500,8 +500,8 @@
 }
 /*-------------------------------footer----------------------*/
 .footer-section{
-    background-color: #0d524b;
-    background-image: linear-gradient(160deg, #0d524b 0%, #050e5c 100%);
+    background: rgb(77,184,195);
+    background: linear-gradient(90deg, rgba(77,184,195,1) 0%, rgba(3,3,79,1) 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -547,15 +547,11 @@ padding-top: 40px;
   
   
   .footer-paragraph .fa-brands {
-    /* padding-top: 4px;
-    color: gray;
-    margin: 5px;
-    font-size: 20px;
-    margin: 10px; */
+   
 
     height: 40px;
     width: 40px;
-    background-color: rgb(53, 53, 243);
+    /*background-color: rgb(53, 53, 243);*/
     color: white;
     display: inline-flex;
     align-items: center;
@@ -565,17 +561,6 @@ padding-top: 40px;
     transition: .4s;
     /* margin-left: 20px; */
 }
-/* .footer-paragraph .fa-brands a:hover{ */
-    /* transition: 0.3s ease-in;
-    cursor: pointer;
-    color: #FFF;
-    font-size: 23px; */
-
-    /* transform: scale(1.2);
-    color: black;
-    background-color: white; */
-   
- 
 .fa-brands:hover{
     color: black !important;
     background-color: white !important;
@@ -622,6 +607,7 @@ font-size: 15px !important;
     font-size: 13px;
     margin-top: 20px;
 }
+
 
 
 

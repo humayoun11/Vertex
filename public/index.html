@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -35,7 +36,7 @@
                           <li><a href="index.html">Home</li></a>
                           <li><a href="">Viral Diseases <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                               <ul class="dropdown-menu">
-                                  <li><a href="measlesmumps.html">Measles & Mumps</a></li>
+                                <li><a href="measles.html">Measles & Mumps</a></li>
                                   <li><a href="covid.html">Covid-19</a></li>
                                   <li><a href="hepatitis.html">Hepatitis</a></li>
                                   <li><a href="ebola.html">Ebola</a></li>
@@ -71,7 +72,7 @@
           <!-- Hover #3 -->
 <div class="box-3">
     <div class="btn btn-three">
-        <a href="#">
+        <a href="#types">
       <span>Review</span></a>
     </div>
   </div>
@@ -86,7 +87,7 @@
                 <h5>About Viruses</h5>
                 <h3>What are <span style="color: greenyellow;">Viruses</span>?</h3>
                 <p>A virus is an infectious microbe consisting  of nuleic acid surrounded by a protein coat.</p> <p>A virus cannot replicate alone; <p>instead, it must infect cells and use components of the host cell</p> <p>to make copies of itself. Often, a virus ends up killing the host cell</p> <p>in the process, causing damage to the host organism.</p>
-                    <a href="#">
+                    <a href="#types">
                         <button>Read more</button>
                     </a>
             </div>
@@ -108,7 +109,7 @@
                 <h5>About Viruses</h5>
                 <h3>Why<span style="color: greenyellow;"> Viruses</span> are so Dangerous to health?</h3>
                 <p> Viruses cause familiar infectious diseases such as the common cold, flu and warts</p> <p>They also cause severe illnesses such as HIV/AIDS, Ebola, and COVID-19.<p>Viruses are like hijackers. They invade living, normal cells</p> <p>and use those cells to multiply and produce other viruses like themselves.</p>
-                    <a href="#">
+                    <a href="#symptoms">
                         <button>Read more</button>
                    </a>
               </div>
@@ -133,7 +134,10 @@
     </div>
 </div>
 <!--------------------------------------------symptoms cards------------------------------------->
-<div class="symptoms-cards">
+<div id="symptoms" class="symptoms-cards">
+
+
+  
     <div class="container">
         <div class="row gy-3">
             <div class="col-md-4">
@@ -202,36 +206,68 @@
         <p> Different viruses attack certain cells in your body
         such as your liver, respiratory system, or blood.</p>
     </div>
-        <div class="types-of-viruses">
+        <div id="types" class="types-of-viruses">
             <div class="container-fluid">
                 <div class="row gy-3">
                 <div class="col-md-3">
                     <div class="cards">
-                        <img src="hepatitis2.png" class="card-img-top" alt="">
+                      <a href="hepatitis.html">
+                        <img src="hepatitis2.png" class="card-img-top" alt="hepatitis"></a>
                         <div class="card-body">
                           <h5 class="card-title">Hepatitis</h5>
                           <p class="card-text">The term hepatitis means inflammation of the liver — hepatitis from viruses.</p>
-                          <a href="hepatitis.html" class="btn btn-primary text-center">Read more</a>
+                          <!--a href="hepatitis.html" class="btn btn-primary text-center">Read more</a-->
                         </div>
                       </div>
                    </div>
                 <div class="col-md-3">
                     <div class="cards">
-                        <img src="mumps.png" class="card-img-top" alt="...">
+                      <a href="measles.html">
+                        <img src="mumps.png" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">Measles & Mumps</h5>
                           <p class="card-text">Measles is an acute viral respiratory illness. It is characterized by a prodrome of fever .</p>
-                          <a href="measlesmumps.html" class="btn btn-primary text-center">Read more</a>
+                          <!--a href="measlesmumps.html" class="btn btn-primary text-center">Read more</a-->
                         </div>
                       </div>
                   </div>
-                <div class="col-md-3">
+                  <div class="col-md-3">
+                    <div class="cards">
+                      <a href="covid.html">
+                        <img src="covid.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                          <h5 class="card-title">COVID-19</h5>
+                          <p class="card-text">Infection with severe acute respiratory syndrome coronavirus 2, or SARS-CoV-2.</p>
+                          <!--a href="covid.html" class="btn btn-primary text-center">Read more</a-->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="cards">
+                      <a href="ebola.html">
+                        <img src="ebola.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                          <h5 class="card-title">Ebola</h5>
+                          <p class="card-text">Ebola Virus Disease (EVD) is a rare and deadly disease in people and nonhuman primates.</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="cards">
+                      <a href="polio.html">
+                        <img src="polio.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                          <h5 class="card-title">Polio</h5>
+                          <p class="card-text">poliomyelitis, is a disabling and potentially deadly disease. It is caused by the poliovirus.</p>
+                        </div>
+                      </div>
+                   </div>
+                  <div class="col-md-3">
                     <div class="cards">
                         <img src="rubella.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Rubella</h5>
                           <p class="card-text">Rubella is a contagious disease. Most people who get rubella usually have a mild illness.</p>
-                          <a href="#" class="btn btn-primary text-center">Read more</a>
                         </div>
                       </div>
                  </div>
@@ -241,7 +277,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Chicken pox</h5>
                           <p class="card-text">Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV).</p>
-                          <a href="#" class="btn btn-primary text-center">Read more</a>
+                          <!--a href="#" class="btn btn-primary text-center">Read more</a-->
                         </div>
                       </div>
                   </div>
@@ -251,7 +287,6 @@
                         <div class="card-body">
                           <h5 class="card-title">Chickengunya</h5>
                           <p class="card-text">Chikungunya virus is spread to people by the bite of an infected mosquito.</p>
-                          <a href="#" class="btn btn-primary text-center">Read more</a>
                         </div>
                       </div>
                    </div>
@@ -261,57 +296,24 @@
                         <div class="card-body">
                           <h5 class="card-title">Dengue</h5>
                           <p class="card-text">Dengue viruses are spread to people through the bite of an infected Aedes species.</p>
-                          <a href="#" class="btn btn-primary text-center">Read more</a>
                         </div>
                       </div>
                    </div>
-                <div class="col-md-3">
-                    <div class="cards">
-                        <img src="covid.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">COVID-19</h5>
-                          <p class="card-text">Infection with severe acute respiratory syndrome coronavirus 2, or SARS-CoV-2.</p>
-                          <a href="covid.html" class="btn btn-primary text-center">Read more</a>
-                        </div>
-                      </div>
-                  </div>
-                <div class="col-md-3">
-                    <div class="cards">
-                        <img src="ebola.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Ebola</h5>
-                          <p class="card-text">Ebola Virus Disease (EVD) is a rare and deadly disease in people and nonhuman primates.</p>
-                          <a href="ebola.html" class="btn btn-primary text-center">Read more</a>
-                        </div>
-                      </div>
-                  </div>
                 <div class="col-md-3">
                     <div class="cards">
                         <img src="yellow fever.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Yellow Fever</h5>
                           <p class="card-text">Yellow fever is a very rare. Illness ranges from a fever with aches and pains.</p>
-                          <a href="#" class="btn btn-primary text-center">Read more</a>
                         </div>
                       </div>
-                   </div>
-                <div class="col-md-3">
-                    <div class="cards">
-                        <img src="polio.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Polio</h5>
-                          <p class="card-text">poliomyelitis, is a disabling and potentially deadly disease. It is caused by the poliovirus.</p>
-                          <a href="" class="btn btn-primary text-center">Read more</a>
-                        </div>
-                      </div>
-                   </div>
+                    </div>
                 <div class="col-md-3">
                     <div class="cards">
                         <img src="rotavirus.webp" class="card-img-top img-fluid" alt="images">
                         <div class="card-body">
                           <h5 class="card-title">Rotavirus</h5>
                           <p class="card-text"> Rotaviruses are the most common cause of diarrhoea among infants and young children</p>
-                          <a href="#" class="btn btn-primary text-center">Read more</a>
                         </div>
                       </div>
                   </div>
@@ -321,7 +323,6 @@
                         <div class="card-body">
                           <h5 class="card-title">Norovirus</h5>
                           <p class="card-text">Norovirus is a very contagious virus that causes vomiting and diarrhea.</p>
-                          <a href="#" class="btn btn-primary text-center">Read more</a>
                         </div>
                      </div>
                 </div>
@@ -473,18 +474,18 @@
   <h5><i class="fa-sharp fa-solid fa-phone"></i> (+123)11 123 4567</h5>
   <h5><i class="fa-sharp fa-solid fa-envelope"></i> Vertexresearchcenter@qodeinteractive.com</h5>
   <br>
-  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-whatsapp"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-brands fa-pinterest-p"></i>
 </div>
 <div class="footer2">
   <ul>
      <h3>CORPORATION</h3>
       <li>CLIENT SERVICES</li>
-      <a href="#" style="color: greenyellow; text-decoration: none;">
+      <a href="contactus.html" style="color: greenyellow; text-decoration: none;">
       <li>Contact Us</li>
       </a>
       <a href="#"  style="color: greenyellow; text-decoration: none;">
@@ -494,7 +495,7 @@
 <br>
 <ul>
   <h3>INFORMATION</h3>
-  <li>To only leave beauty as legacy</li>
+  <li>Recent updates</li>
   <li>legal terms</li>
   <li>data protection</li>
   <li>cookie management</li>
@@ -505,7 +506,7 @@
 </ul>
 <ul>
   <h3>USER AREA</h3>
-  <li>To only leave style as legacy</li>
+  <li>Know more about us</li>
   <li>legal terms</li>
   <li>data protection</li>
   <li>cookie management</li>
@@ -517,7 +518,7 @@
 </ul>
 <ul>
   <h3>OUR Motive</h3>
-  <li>To only leave style as legacy</li>
+  <li>Aims and motive</li>
   <li>legal terms</li>
   <li>data protection</li>
   <li>cookie management</li>
