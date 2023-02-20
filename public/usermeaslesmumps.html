@@ -79,11 +79,11 @@ cursor: pointer;
                                 <li><a href="location.html">Location</a></li>
                                 <li><a href=""><h6 id="showusername"></h6></a><i class="fa-sharp fa-solid fa-caret-down"></i>
                                   <ul class="dropdown-menu">
-                                      <li><a href="userprofile.html">Profile</a></li>
-                                      <li><a href="usersetting.html">Settings</a></li>
-                                      <li><a href="userapproved.html">Approved</a></li>
-                                      <li><a href="loginsignup.html">Logout</li></a>
-                                      </ul>
+                                    <li><a href="userprofile.html">Profile</a></li>
+                                    <!-- <li><a href="usersetting.html">Settings</a></li> -->
+                                    <li><a href="usercomments.html">Comments</a></li>
+                                    <li><a href="loginsignup.html">Logout</li></a>
+                                    </ul>
                               </li>
                               <li><a href=""><h6>Well Come Mr/MRS</h6></a></li>
                               <!-- <li><a href="">Good Morning</a></li> -->
@@ -333,12 +333,7 @@ cursor: pointer;
     <h3>"Nearly 40 million children are dangerously susceptible to growing <span style="color: greenyellow;"> measles</span> threat"!</h3>
     <br><br>
     <div class="buttons">
-      <!-- <div class="btn btn-three">
-      <button onclick="comment()">Comment</button>
-    </div>
-    <div class="btn btn-three">
-    <button >Feedback</button>
-  </div> -->
+      
   <button class=" btn btn-three color" onclick="comment()">Comment</button>
   <button class=" btn btn-three" onclick="comment()">Feedback</button>
     </div>
@@ -351,7 +346,15 @@ cursor: pointer;
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h6>Measles Mumps</h6>
+      <h6>Select virus</h6>
+      <select name="virus" id="virus">
+        <option value=""></option>
+        <option value="measlesmumps">measlesmumps</option>
+        <option value="polio">polio</option>
+        <option value="hepatitis">hepatitis</option>
+        <option value="ebola">ebola</option>
+        <option value="covid">covid</option>
+      </select>
       <h6 id="userdetailname" ></h6>
       <h6>Comment</h6>
       <textarea name="text"  id="commenttext" cols="30" rows="10"></textarea>

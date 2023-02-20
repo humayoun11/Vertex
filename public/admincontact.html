@@ -84,10 +84,11 @@
       <table id="myTable">
         <thead>
         <tr>
-          <th>User Name</th>
-          <th>User Email</th>
-          <th>Phone Number</th>
-          <th>Password</th>
+          <th>First Name</th>
+          <th>Second Name</th>
+          <th>Contact Email</th>
+          <th>Contact Number</th>
+          <th>Message</th>
           
         </tr>
       </thead>
@@ -140,12 +141,12 @@
   
     <script>
       var tableRef = document.getElementById('myTable');
-      var userdata = JSON.parse(localStorage.getItem('formData'));
-        for (var index = 0; index < userdata.length; index++) {
-          const row = userdata[index];
+      var contactData = JSON.parse(localStorage.getItem('contactData'));
+        for (var index = 0; index < contactData.length; index++) {
+          const row = contactData[index];
           console.log(row);
           const tr = tableRef.insertRow();
-          tr.innerHTML = `<td>${row.username}</td><td>${row.email}</td><td>${row.number}</td><td>${row.password}</td>`;
+          tr.innerHTML = `<td>${row.firstname}</td><td>${row.secondname}</td><td>${row.contactemail}</td><td>${row.contactnumber}</td><td>${row.contactmessage}</td>`;
         }
      
     </script>

@@ -20,42 +20,35 @@
                     </div>
                     <div class="navlinks">
                         <ul>
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="">Viral Diseases <i class="fa-sharp fa-solid fa-caret-down"></i></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="measles.html">Measles & Mumps</a></li>
-                              <li><a href="covid.html">Covid-19</a></li>
-                              <li><a href="hepatitis.html">Hepatitis</a></li>
-                              <li><a href="ebola.html">Ebola</a></li>
-                              <li><a href="polio.html">Polio</li></a>
-                              </ul>
-                          </li>
-                          <li><a href="contactus.html">Contact Us</a></li>
-                          <li><a href="about.html">About Us</a></li>
-                          <li><a href="location.html">Location</a></li>
-                          <div class="login-signup">
-                        <a href="loginsugnup.html">
-                          <button>Login/signup</button>
-                        </a>
+                            <li><a href="index.html">Home</li></a>
+                            <li><a href="">Viral Diseases <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="measles.html">Measles & Mumps</a></li>
+                                    <li><a href="covid.html">Covid-19</a></li>
+                                    <li><a href="hepatitis.html">Hepatitis</a></li>
+                                    <li><a href="ebola.html">Ebola</a></li>
+                                    <li><a href="polio.html">Polio</li></a>
+                                    </ul>
+                                </li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <!-- <li><a href="location.html">Location</a></li> -->
+                                <div class="login-signup">
+                              <a href="loginsignup.html">
+                                <button>Login/signup</button>
+                              </a>
                             </div>
                         </ul>
-                        <!-------------------nav icons----------------->
-                        <!--i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-pinterest-p"></i-->
-                        
                     </div>
                 </div>
             </div>
         </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
       </main>
     
     <div class="contactus">
         <div class="title">
-            <h2>Get In Touch</h2>
+            <h2 style="color: black;">Get In Touch</h2>
         </div>
         <div class="box">
             <!--form-->
@@ -66,35 +59,35 @@
                         <div class="row50">
                             <div class="inputbox">
                                 <span>First name</span>
-                                <input type="text" placeholder="e.g John">
+                                <input type="text" placeholder="e.g John" id="contactfirstname">
                             </div>
                               <div class="inputbox">
                                 <span>Last name</span>
-                                <input type="text" placeholder="e.g Doe">
+                                <input type="text" placeholder="e.g Doe" id="contactsecondname">
                             </div>
                         </div>
 
                         <div class="row50">
                             <div class="inputbox">
                                 <span>Email-Address</span>
-                                <input type="email" placeholder="e.g JohnDoe@gmail.com">
+                                <input type="email" placeholder="e.g JohnDoe@gmail.com" id="contactemail">
                             </div>
                               <div class="inputbox">
                                 <span>Contact Number</span>
-                                <input type="number" placeholder="e.g +91 678 12345">
+                                <input type="number" placeholder="e.g +91 678 12345" id="contactnumber">
                             </div>
                         </div>
 
                           <div class="row100">
                             <div class="inputbox">
                                 <span>Message</span>
-                                <textarea placeholder="Write Your Message here...."></textarea>
+                                <textarea placeholder="Write Your Message here...." id="contactmessage"></textarea>
                             </div>
                           </div>
 
                           <div class="row100">
                             <div class="inputbox">
-                                <input type="submit" value="Send" >
+                                <input type="submit" value="Send" onclick="contactsubmit()" >
                             </div>
                           </div>
 
@@ -142,4 +135,41 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+<script>
+    function contactsubmit() {
+  let firstname = document.getElementById('contactfirstname').value,
+  secondname = document.getElementById('contactsecondname').value,
+  contactemail = document.getElementById('contactemail').value,
+  contactnumber = document.getElementById('contactnumber').value,
+  contactmessage = document.getElementById('contactmessage').value
+
+  let contactData = JSON.parse(localStorage.getItem('contactData')) || []
+
+  let exist =
+    contactData.length &&
+    JSON.parse(localStorage.getItem('contactData')).some(
+      (data) =>
+      data.id &&
+        data.firstname.toLowerCase() == firstname.toLowerCase() &&
+        data.secondname.toLowerCase() == secondname.toLowerCase() &&
+        data.contactemail.toLowerCase() == contactemail.toLowerCase() &&
+        data.contactnumber.toLowerCase() == contactnumber.toLowerCase()&&
+        data.contactmessage.toLowerCase() == contactmessage.toLowerCase(),
+    )
+
+  if (!exist) {
+    contactData.push({ firstname, secondname, contactemail, contactnumber,contactmessage })
+    localStorage.setItem('contactData', JSON.stringify(contactData))
+    document.querySelector('form').reset()
+    document.getElementById('RUser').focus()
+    alert('registration successfull')(
+      (window.location.href = 'loginsignup.html'),
+    )
+  } else {
+    alert('Ooopppssss... Duplicate found!!!\nYou have already sigjned up')
+  }
+  e.preventDefault()
+}
+console.log(contactData)
+</script>
 </html>

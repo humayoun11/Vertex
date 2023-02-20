@@ -44,7 +44,7 @@
                         <!-- <li><a href="index.html">Home</li></a> -->
                         <!-- <li><a href="">Viral Diseases <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                              <li><a href="measles.html">Measles & Mumps</a></li>
+                              <li><a href="measlesmumps.html">Measles & Mumps</a></li>
                               <li><a href="covid.html">Covid-19</a></li>
                               <li><a href="hepatitis.html">Hepatitis</a></li>
                               <li><a href="ebola.html">Ebola</a></li>
@@ -64,7 +64,7 @@
                                 <li><a href="loginsignup.html">Logout</li></a>
                                 </ul>
                             </li>
-                            <li><a href="l">Users</a></li>
+                            <li><a href="">Users</a></li>
                             <!-- <li><a href="">Good Morning</a></li> -->
                     </ul>
                           <!----------------nav icons----------------->
@@ -85,9 +85,8 @@
         <thead>
         <tr>
           <th>User Name</th>
-          <th>User Email</th>
-          <th>Phone Number</th>
-          <th>Password</th>
+          <th>Virus Name</th>
+          <th>Comments</th>
           
         </tr>
       </thead>
@@ -140,12 +139,12 @@
   
     <script>
       var tableRef = document.getElementById('myTable');
-      var userdata = JSON.parse(localStorage.getItem('formData'));
+      var userdata = JSON.parse(localStorage.getItem('comment'));
         for (var index = 0; index < userdata.length; index++) {
           const row = userdata[index];
           console.log(row);
           const tr = tableRef.insertRow();
-          tr.innerHTML = `<td>${row.username}</td><td>${row.email}</td><td>${row.number}</td><td>${row.password}</td>`;
+          tr.innerHTML = `<td>${row.userdetailname}</td><td>${row.uvirusname}</td><td>${row.commenttext}</td>`;
         }
      
     </script>

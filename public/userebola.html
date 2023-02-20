@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBOLA</title>
     <link rel="stylesheet" href="ebola.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Start Bootstrap Carousel HEAD section -->
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
 <script type="text/javascript" src="engine1/jquery.js"></script>
@@ -13,6 +14,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+<style>
+    /* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  align-items: center !important;
+  text-align: center !important;
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+  .counter {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .count {
+    display: inline-block;
+    position: relative;
+    animation: count 2s ease-in-out;
+  }
+
+  @keyframes count {
+    0% {
+      opacity: 0;
+      top: -20px;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+  }
+</style>
 <body>
       <!-- navbar section start -->
       <main>
@@ -24,39 +87,32 @@
                         <h4><span style="color: white;">VER</span><span style="color: rgb(158, 253, 16);">TEX</span></h4>
                     </div>
                     <div class="navlinks">
-                        <ul>
-                          <li><a href="userhome.html">Home</a></li>
-                          <li><a href="">Viral Diseases <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                      <ul>
+                        <li><a href="userhome.html">Home</li></a>
+                        <li><a href="">Viral Diseases <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                              <li><a href="usermeaslesmumps.html">Measles & Mumps</a></li>
-                            <li><a href="usercovid.html">Covid-19</a></li>
-                            <li><a href="userhepatitis.html">Hepatitis</a></li>
-                            <li><a href="userebola.html">Ebola</a></li>
-                            <li><a href="userpolio.html">Polio</li></a>
-                              </ul>
-                          </li>
-                          <li><a href="contactus.html">Contact Us</a></li>
-                          <li><a href="about.html">About Us</a></li>
-                          <li><a href="location.html">Location</a></li>
-                          <li><a href=""><h6 id="showusername"></h6></a><i class="fa-sharp fa-solid fa-caret-down"></i>
-                            <ul class="dropdown-menu">
-                                <li><a href="userprofile.html">Profile</a></li>
-                                <li><a href="usersetting.html">Settings</a></li>
-                                <li><a href="userapproved.html">Approved</a></li>
-                                <li><a href="loginsignup.html">Logout</li></a>
+                              <li><a href="usermeasles.html">Measles & Mumps</a></li>
+                              <li><a href="usercovid.html">Covid-19</a></li>
+                              <li><a href="userhepatitis.html">Hepatitis</a></li>
+                              <li><a href="userebola.html">Ebola</a></li>
+                              <li><a href="userpolio.html">Polio</li></a>
                                 </ul>
-                        </li>
-                        <li><a href=""><h6>Well Come Mr/MRS</h6></a></li>
-                        <!-- <li><a href="">Good Morning</a></li> -->
-                        </ul>
-                        <!-------------------nav icons----------------->
-                        <!--i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-pinterest-p"></i-->
-                        
+                            </li>
+                            <!-- <li><a href="contactus.html">Contact Us</a></li> -->
+                            <li><a href="userabout.html">About Us</a></li>
+                            <!-- <li><a href="location.html">Location</a></li> -->
+                            
+                            <li><a href=""><h6 id="showusername"></h6></a><i class="fa-sharp fa-solid fa-caret-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a href="userprofile.html">Profile</a></li>
+                                    <!-- <li><a href="usersetting.html">Settings</a></li> -->
+                                    <li><a href="usercomments.html">Comments</a></li>
+                                    <li><a href="loginsignup.html">Logout</li></a>
+                                    </ul>
+                            </li>
+                            <li><a href=""><h6>Well Come Mr/MRS</h6></a></li>
+                            <!-- <li><a href="">Good Morning</a></li> -->
+                    </ul>
                     </div>
                 </div>
             </div>
@@ -69,9 +125,15 @@
         </div>
           <br>
           <div class="banner-text-flex">
-           <h4>Cases in a day: <span style="color: greenyellow;">999954</span></h4>
-           <h4>Number of deaths: <span style="color: greenyellow;">378804</span></h4>
-           <h4>Recovered Cases: <span style="color: greenyellow;">3567004</span></h4>
+           <h4>Cases in a day: <div class="counter">
+            <span style="color: greenyellow;" class="count" id="cases">1</span>
+          </div></h4>
+           <h4>Number of deaths: <div class="counter">
+            <span style="color: greenyellow;" class="count" id="deaths">1</span>
+          </div></h4>
+           <h4>Recovered Cases: <div class="counter">
+            <span style="color: greenyellow;" class="count" id="recovered">1</span>
+          </div></h4>
           </div>
           <br>
       </div>
@@ -371,13 +433,32 @@
   <br><br>
   <!-----------------buttons------------>
   <div class="buttons">
-    <div class="btn btn-three">
-    <button>Comment</button>
-  </div>
-  <div class="btn btn-three">
-  <button>Feedback</button>
-</div>
-  </div>
+    <button class=" btn btn-three color" onclick="comment()">Comment</button>
+    <button class=" btn btn-three" onclick="comment()">Feedback</button>
+      </div>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h6>Select virus</h6>
+          <select name="virus" id="virus">
+            <option value=""></option>
+            <option value="measlesmumps">measlesmumps</option>
+            <option value="polio">polio</option>
+            <option value="hepatitis">hepatitis</option>
+            <option value="ebola">ebola</option>
+            <option value="covid">covid</option>
+          </select>
+          <h6 id="userdetailname" ></h6>
+          <h6>Comment</h6>
+          <textarea name="text"  id="commenttext" cols="30" rows="10"></textarea>
+          <br>
+          <button class="w3-button w3-black"  onclick="submit()" >submit</button>
+          
+        </div>
+      
+      </div>
   <br><br>
 <!------------------------------------footer------------------------------>
 <div class="footer-section">
@@ -456,12 +537,74 @@
 </div>
 </div>
 
+<script>
+  const countcases = document.getElementById('cases');
+  const countdeaths = document.getElementById('deaths');
+  const countrecovered = document.getElementById('recovered');
+  const updateCount = (targetCount,targer) => {
+    const countDuration = 2000; // in milliseconds
+    const countStep = Math.ceil(targetCount / (countDuration / 10));
 
+    let currentCount = 1;
+    const countInterval = setInterval(() => {
+      if (currentCount >= targetCount) {
+        clearInterval(countInterval);
+        currentCount = targetCount;
+      } else {
+        currentCount += countStep;
+      }
+      targer.textContent = currentCount.toLocaleString();
+    }, 10);
+  };
+  updateCount(30504,countcases);
+  updateCount(1067454,countdeaths);
+  updateCount(45004,countrecovered);
+</script>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  // btn.onclick = function() {
+  //   alert('humayoun')
+  //   console.log('humayoun')
+  //   modal.style.display = "block";
+  // }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  function comment(){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+  }
+    </script>
+    <script src="commentfeedback.js"></script>
+<script>
   document.getElementById('showusername').innerHTML =
+    localStorage.localUsername;
+</script>
+<script>
+  document.getElementById('showusername').innerHTML =
+    localStorage.localUsername;
+    document.getElementById('userdetailname').innerHTML =
     localStorage.localUsername;
 </script>
 </html>

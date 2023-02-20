@@ -21,6 +21,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
     
 </head>
+<style>
+  .counter {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .count {
+    display: inline-block;
+    position: relative;
+    animation: count 5s ease-in-out;
+  }
+
+  @keyframes count {
+    0% {
+      opacity: 0;
+      top: -20px;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+  }
+</style>
 <body>
     <!------------------------------navbar------------------------------------>
     <main>
@@ -43,9 +66,9 @@
                                   <li><a href="polio.html">Polio</li></a>
                                   </ul>
                               </li>
-                              <li><a href="contactus.html">Contact Us</a></li>
+                              <li><a href="contactmap.html">Contact Us</a></li>
                               <li><a href="about.html">About Us</a></li>
-                              <li><a href="location.html">Location</a></li>
+                              <!-- <li><a href="location.html">Location</a></li> -->
                               <div class="login-signup">
                             <a href="loginsignup.html">
                               <button>Login/signup</button>
@@ -64,9 +87,18 @@
            <br>
            <br>
            <div class="banner-text-flex">
-            <h4>Cases in a day: <span style="color: greenyellow;">1067454</span></h4>
-            <h4>Number of deaths: <span style="color: greenyellow;">30504</span></h4>
-            <h4>Recovered Cases: <span style="color: greenyellow;">45004</span></h4>
+
+            <h4>Cases in a day: 
+              <div class="counter">
+                <span style="color: greenyellow;" class="count" id="cases">1</span>
+              </div>
+            </h4>
+            <h4>Number of deaths: <div class="counter">
+              <span style="color: greenyellow;" class="count" id="deaths">1</span>
+            </div></h4>
+            <h4>Recovered Cases: <div class="counter">
+              <span style="color: greenyellow;" class="count" id="recovered">1</span>
+            </div></h4>
            </div>
            <br>
           <!-- Hover #3 -->
@@ -534,6 +566,29 @@
  <h5> © 2022 Vertex Research center, All Rights Reserved</h5>
 </div>
 </div>
+<script>
+  const countcases = document.getElementById('cases');
+  const countdeaths = document.getElementById('deaths');
+  const countrecovered = document.getElementById('recovered');
+  const updateCount = (targetCount,targer) => {
+    const countDuration = 1500; // in milliseconds
+    const countStep = Math.ceil(targetCount / (countDuration / 10));
+
+    let currentCount = 1;
+    const countInterval = setInterval(() => {
+      if (currentCount >= targetCount) {
+        clearInterval(countInterval);
+        currentCount = targetCount;
+      } else {
+        currentCount += countStep;
+      }
+      targer.textContent = currentCount.toLocaleString();
+    }, 10);
+  };
+  updateCount(30504,countcases);
+  updateCount(1067454,countdeaths);
+  updateCount(45004,countrecovered);
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
