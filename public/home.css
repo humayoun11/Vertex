@@ -152,7 +152,7 @@ main{
       BUTTON THREE
 ========================
 */
-.btn-three a{
+.btn-three a button{
     text-decoration: none;
     color: #FFF;
     font-family: poppins;
